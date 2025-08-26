@@ -5,7 +5,7 @@ layout: layouts/home.njk
 <div class="olivia"> 
 <img class="logo" src="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/stars1040invert.png?v=1735942380941">
 
-<a href="/"><h1>OLIVIA LEE</h1></a>
+<a href="{{ '/' | url }}"><h1>OLIVIA LEE</h1></a>
 
 </div>
 <br>

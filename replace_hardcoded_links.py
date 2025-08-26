@@ -5,10 +5,10 @@ import shutil
 
 # Pattern to match Liquid variable usage that should get the | url filter
 # This targets variables that are likely to be local asset paths
-asset_var_pattern = re.compile(r'{{\s*([\w.]+\.(?:image|thumbnail|photo|src|asset))\s*}}')
+asset_var_pattern = re.compile(r'{{\s*([\w.]+\.(?:image|thumbnail|photo|src|asset|animation|video))\s*}}')
 
-# Pattern for HTML attributes (href/src) with absolute paths
-html_pattern = re.compile(r'(href|src)=(["\'])(/[^"\']*)\2')
+# Pattern for HTML attributes (href/src) with absolute paths - case insensitive
+html_pattern = re.compile(r'(href|src)=(["\'])(/[^"\']+)\2', re.IGNORECASE)
 
 # Pattern to fix escaped quotes in Liquid tags
 escaped_quotes_pattern = re.compile(r"{{(\s*)\\'([^']*)\\'(\s*\|\s*url\s*)}}")
@@ -19,6 +19,12 @@ for ext in ("*.html", "*.md", "*.njk"):
     for file in root.rglob(ext):
         text = file.read_text(encoding="utf-8")
         original_text = text
+        
+        
+        # Debug: Print HTML matches found
+        html_matches = html_pattern.findall(text)
+        if html_matches:
+            print(f"Found HTML matches in {file}: {html_matches}")
         
         # Process Liquid variables that should use | url filter
         def asset_var_replacer(match):

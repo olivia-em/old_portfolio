@@ -51,7 +51,7 @@ skills:
             </div>
           {% else %}
             <!-- Otherwise, use image as background -->
-            <div class="sites" style="background-image: url('{{ site.image }}');">
+            <div class="sites" style="background-image: url('{{ site.image | url }}');">
               <h4 class="overlay-content">
                 < {{ site.title }} >
               </h4>

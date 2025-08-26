@@ -20,7 +20,7 @@ templateClass: tmpl-home
       <!-- Render Video Background -->
       <div class="projects video-background">
         <video autoplay loop muted playsinline class="video-content">
-          <source src="{{ post.data.animation }}" type="video/mp4">
+          <source src="{{ post.data.animation | url }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <h4 class="overlay-content">

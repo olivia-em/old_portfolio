@@ -42,7 +42,7 @@ skills:
             <!-- Render video if animation exists -->
             <div class="sites video-background">
               <video autoplay loop muted playsinline class="video-content">
-                <source src="{{ site.animation }}" type="video/mp4">
+                <source src="{{ site.animation | url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <h4 class="overlay-content">

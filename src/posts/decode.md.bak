@@ -1,24 +1,24 @@
 ---
 title: Decode
 date: 2023-12-07
-thumbnail: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3-min.jpg" | url }}
+thumbnail: /assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3-min.jpg
 sites:
-  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-rects.mp4" | url }}
+  - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-rects.mp4
     link: https://olivia-em.github.io/codeyourway/decode/decode8/index.html
     title: Decode 8
-  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201.mp4" | url }}
+  - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201.mp4
     link: https://olivia-em.github.io/codeyourway/decode/decode10/index.html
     title: Decode 10
-  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201_1.mp4" | url }}
+  - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201_1.mp4
     link: https://olivia-em.github.io/codeyourway/decode/decode11/index.html
     title: Decode 11
-  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-decode1-min.png" | url }}
+  - image: /assets/2decb767-8051-4237-974a-927409aa4233-decode1-min.png
     link: https://olivia-em.github.io/codeyourway/decode/decode1/index.html
     title: Decode 1
-  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3.mp4" | url }}
+  - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3.mp4
     link: https://olivia-em.github.io/codeyourway/decode/decode3/index.html
     title: Decode 3
-  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-decode4-min.png" | url }}
+  - image: /assets/2decb767-8051-4237-974a-927409aa4233-decode4-min.png
     link: https://olivia-em.github.io/codeyourway/decode/decode4/index.html
     title: Decode 4
 tags: 

@@ -28,9 +28,9 @@ Your browser does not support the video tag.
 {%- if post.data.media and post.data.media.length > 0 -%}
   {%- for item in post.data.media -%}
     {%- if item.type == 'video' -%}
-      <video src='{{ item.src }}' class="photos video-stable" controls style="transform: none !important; object-fit: cover;"></video>
+      <video src='{{ item.src | url }}' class="photos video-stable" controls style="transform: none !important; object-fit: cover;"></video>
     {%- else -%}
-      <img src='{{ item.src }}' class="photos">
+      <img src='{{ item.src | url }}' class="photos">
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
@@ -99,7 +99,7 @@ Your browser does not support the video tag.
         <a class="previous" href="{{ prevPost.url | url }}"> <<< </a>
       </h1>
     {% endif %}
-        <a style="width: auto;display:flex;justify-content: center;" class="next" href="/portfolio"><img class="logo" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}"></a>
+        <a style="width: auto;display:flex;justify-content: center;" class="next" href="{{ \'/portfolio\' | url }}"><img class="logo" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}"></a>
       {% if nextPost.url %}
         <h1><a class="next" href="{{ nextPost.url | url }}"> >>> </a></h1>
     {% endif %}

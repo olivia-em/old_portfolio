@@ -63,7 +63,7 @@ skills:
   {%- if post.url == page.url -%} 
     {%- for site in post.data.sites -%}
     <a target="_blank" href="{{ site.link }}">
-      <div style="background-image: url('{{ site.image }}');" class="sites">
+      <div style="background-image: url('{{ site.image | url }}');" class="sites">
         <h4>
           < {{ site.title }} >
         </h4>

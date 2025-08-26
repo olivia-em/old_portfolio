@@ -14,13 +14,13 @@ layout: layouts/home.njk
     <h3><a href="#" class="filter-btn" data-filter="webdev">Web Development</a></h3>
     <h3><a href="#" class="filter-btn" data-filter="code">Creative Code</a></h3>
     <h3><a href="#" class="filter-btn" data-filter="vidart">Video</a></h3>
-    <h3><a href="/portfolio/posts/design" >Static Design</a></h3>
+    <h3><a href="{{ '/portfolio/posts/design' | url }}" >Static Design</a></h3>
     <h3><a href="#" class="filter-btn" data-filter="all">All Projects</a></h3>
 </div>
   
   <br><br>
 <div class="nav"> 
-<h3><a href="/portfolio/about">> About</a></h3>
+<h3><a href="{{ '/portfolio/about' | url }}">> About</a></h3>
 <h3><a target="_blank" href="https://github.com/olivia-em">> Github</a></h3>
 <h3><a target="_blank" href="https://editor.p5js.org/oliviaemlee/collections/Dg-N4uNEb">> p5.js</a></h3>
   

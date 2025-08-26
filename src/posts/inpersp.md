@@ -55,7 +55,7 @@ Repository
               </h4>
             </div>
           {% else %}
-            <div class="sites" style="background-image: url('{{ site.image }}');">
+            <div class="sites" style="background-image: url('{{ site.image | url }}');">
               <h4 class="overlay-content">
                 < {{ site.title }} >
               </h4>

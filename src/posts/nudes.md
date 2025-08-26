@@ -15,7 +15,7 @@ skills:
   - Adobe After Effects
   - Adobe Firefly 
 documentation: 
-  - https://docblog-olee.glitch.me/projects/generativevid/
+  - https://olivia-em.github.io/docblog/projects/generativevid/
 ---
  <br>
  <div class="cont">

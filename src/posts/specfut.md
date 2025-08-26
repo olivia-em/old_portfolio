@@ -14,7 +14,7 @@ blurb:
 skills:
   - Adobe After Effects
 documentation: 
-  - https://docblog-olee.glitch.me/projects/specfut/
+  - https://olivia-em.github.io/docblog/projects/specfut/
 ---
  <br>
  <div class="cont">

@@ -24,7 +24,7 @@ tags:
 repo: 
   - https://github.com/olivia-em/codeyourway
 blog:
- - https://docblog-olee.glitch.me/cyw/week1/
+ - https://olivia-em.github.io/docblog/cyw/week1/
 skills:
   - p5.js
   - WEBGL

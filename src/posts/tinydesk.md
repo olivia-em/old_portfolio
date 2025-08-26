@@ -17,7 +17,7 @@ skills:
   - Arduino IDE
   - ML5 Body Segmentation
 documentation: 
-  - https://docblog-olee.glitch.me/projects/tinydeskVJ/
+  - https://olivia-em.github.io/docblog/projects/tinydeskVJ/
 ---
 
 <div class="skill-list">       

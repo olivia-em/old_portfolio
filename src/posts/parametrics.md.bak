@@ -1,24 +1,24 @@
 ---
 title: Parametrics
 date: 2024-12-04
-animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/flower.mp4?v=1744235522438
+animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-flower.mp4" | url }}
 sites:
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/flower.mp4?v=1744235522438
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-flower.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/recode/screensaver/index.html
     title: Screensaver
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/ball.mp4?v=1744236776474
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-ball.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/explore/explore2/index.html
     title: Explore 2
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/para1.mp4?v=1744235960754
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-para1.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/explore/explore3/index.html
     title: Explore 3
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/lights.mp4?v=1744235962698
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-lights.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/explore/explore4/index.html
     title: Explore 4
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/para2.mp4?v=1744235956100
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-para2.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/explore/explore5/index.html
     title: Explore 5
-  - image: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Screenshot%202025-02-06%20at%202.15.29%E2%80%AFPM.png?v=1738869498064
+  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-Screenshot%202025-02-06%20at%202.15.29%E2%80%AFPM.png" | url }}
     link: https://olivia-em.github.io/codeyourway/recode/preLoader/index.html
     title: preLoader
 tags: 

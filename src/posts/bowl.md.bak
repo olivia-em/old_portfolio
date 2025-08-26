@@ -1,14 +1,14 @@
 ---
 title: Incantation Bowl
 date: 2024-12-07
-animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/bowl.mp4?v=1744232238888
+animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-bowl.mp4" | url }}
 blog:
   - https://incantationbowl.glitch.me/workflow.html
 sites:
-  - image: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/bowl.png?v=1738193465633
+  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-bowl.png" | url }}
     link: https://incantationbowl.glitch.me/
     title: Incantation Bowl
-    animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/bowl.mp4?v=1744232238888
+    animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-bowl.mp4" | url }}
 tags:
   - all
   - webdev

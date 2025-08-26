@@ -1,12 +1,12 @@
 ---
 title: Mozia 2023
 date: 2024-12-07
-animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/kiln.mp4?v=1744235387282
+animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-kiln.mp4" | url }}
 sites:
-  - image: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/mozia-screengrab.png?v=1701375709597
+  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-mozia-screengrab.png" | url }}
     link: https://mozia-2023.glitch.me/
     title: Mozia 2023
-    animation: https://cdn.glitch.global/95731519-6287-4bbd-a281-712ac2b13fef/kiln.mp4?v=1744235387282
+    animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-kiln.mp4" | url }}
 tags: 
   - webdev 
   - all

@@ -3,10 +3,10 @@ layout: layouts/post.njk
 title: Qatsi (2025)
 description: 
 date: 2025-02-14
-thumbnail: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/qatsi.jpg?v=1741321562146
+thumbnail: /assets/95731519-6287-4bbd-a281-712ac2b13fef-qatsi.jpg
 images: 
 videos:
-  - https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/qatsi.MP4?v=1741321564471
+  - /assets/95731519-6287-4bbd-a281-712ac2b13fef-qatsi.MP4
 tags: 
   - vidart 
   - all

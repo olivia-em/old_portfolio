@@ -3,10 +3,10 @@ layout: layouts/post.njk
 title: Are you free tomorrow?
 description: 
 date: 2022-10-14
-thumbnail: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/areyoufree.png?v=1736448845005
+thumbnail: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-areyoufree.png" | url }}
 images: 
 videos:
-  - https://cdn.glitch.me/d7ac8ce9-d6b5-4915-b92c-e6f0bf0d0c29/areyoufree.mp4?v=1729041185440
+  - {{ "/assets/2decb767-8051-4237-974a-927409aa4233-areyoufree.mp4" | url }}
 tags: 
   - vidart 
   - all

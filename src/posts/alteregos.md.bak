@@ -3,10 +3,10 @@ layout: layouts/post.njk
 title: Alter Egos
 description: 
 date: 2025-03-22
-thumbnail: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/still9.png?v=1745335684155
+thumbnail: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-still9.png" | url }}
 images: 
 videos:
-  - https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/AEpromoS25_final.mp4?v=1745335579495
+  - {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-AEpromoS25_final.mp4" | url }}
 tags: 
   - vidart 
   - all

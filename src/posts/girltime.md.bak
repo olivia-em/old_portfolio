@@ -7,24 +7,24 @@ repo:
     link: https://github.com/olivia-em/GirlTime
   - title: Other Documentation
     link: https://prishajain.notion.site/girltime
-thumbnail: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_7812.JPG?v=1751484875136
+thumbnail: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7812.JPG" | url }}
 media:
   - type: image
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_7635.JPG?v=1751484851786
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7635.JPG" | url }}
   - type: image
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_7587.JPG?v=1751484844414
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7587.JPG" | url }}
   - type: video
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_1361_2.mov?v=1751486193942
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_1361_2.mov" | url }}
   - type: image
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_1364.jpg?v=1751486074118
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_1364.jpg" | url }}
   - type: video
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/girltime-vid.MOV?v=1751484901612
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-girltime-vid.MOV" | url }}
   - type: image
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_7103.JPG?v=1751485983995
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7103.JPG" | url }}
   - type: image
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_7168.JPG?v=1751485997979
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7168.JPG" | url }}
   - type: video
-    src: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/IMG_7219.MOV?v=1751484897943
+    src: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7219.MOV" | url }}
 
 tags:
   - code

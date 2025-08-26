@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 ---
 
-<img style="position: relative; float: left; z-index: 2; margin:2%; text-align:center; " class="aboutimg" src="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/IMG_5306.JPG?v=1738193076414">
+<img style="position: relative; float: left; z-index: 2; margin:2%; text-align:center; " class="aboutimg" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-IMG_5306.JPG" | url }}">
 
 <div style="margin:2%;">
 
@@ -27,7 +27,7 @@ layout: layouts/page.njk
             <i>LinkedIn</i>
           </p></a
         >
-    <a class="a" target="_blank" href="https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/Lee.Olivia_Re%CC%81sume%CC%81.pdf?v=1741321515103">
+    <a class="a" target="_blank" href="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-Lee.Olivia_Re%CC%81sume%CC%81.pdf" | url }}">
           <p>
             <i>Resume</i>
           </p></a

@@ -1,9 +1,9 @@
 ---
 title: Lessons in Perspective
 date: 2025-04-21
-thumbnail: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/Screenshot%202025-04-05%20at%201.16.49%E2%80%AFPM.png?v=1744346702742
+thumbnail: /assets/95731519-6287-4bbd-a281-712ac2b13fef-Screenshot%202025-04-05%20at%201.16.49%E2%80%AFPM.png
 sites:
-  - image: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/Screenshot%202025-04-05%20at%201.16.49%E2%80%AFPM.png?v=1744346702742
+  - image: /assets/95731519-6287-4bbd-a281-712ac2b13fef-Screenshot%202025-04-05%20at%201.16.49%E2%80%AFPM.png
     link: https://lessons-inperspective.netlify.app/
     title: Lessons in Perspective
 repo: https://github.com/olivia-em/inperspective

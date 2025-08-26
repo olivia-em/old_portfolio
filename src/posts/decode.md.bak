@@ -1,24 +1,24 @@
 ---
 title: Decode
 date: 2023-12-07
-thumbnail: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/decode3-min.jpg?v=1741283421645
+thumbnail: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3-min.jpg" | url }}
 sites:
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/rects.mp4?v=1744235952031
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-rects.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/decode/decode8/index.html
     title: Decode 8
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/Comp%201.mp4?v=1744236455209
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/decode/decode10/index.html
     title: Decode 10
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/Comp%201_1.mp4?v=1744236458951 
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201_1.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/decode/decode11/index.html
     title: Decode 11
-  - image: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/decode1-min.png?v=1739292980345
+  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-decode1-min.png" | url }}
     link: https://olivia-em.github.io/codeyourway/decode/decode1/index.html
     title: Decode 1
-  - animation: https://cdn.glitch.me/95731519-6287-4bbd-a281-712ac2b13fef/decode3.mp4?v=1744235947569
+  - animation: {{ "/assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3.mp4" | url }}
     link: https://olivia-em.github.io/codeyourway/decode/decode3/index.html
     title: Decode 3
-  - image: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/decode4-min.png?v=1739292988727
+  - image: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-decode4-min.png" | url }}
     link: https://olivia-em.github.io/codeyourway/decode/decode4/index.html
     title: Decode 4
 tags: 

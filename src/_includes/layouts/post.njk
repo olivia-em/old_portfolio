@@ -99,7 +99,7 @@ Your browser does not support the video tag.
         <a class="previous" href="{{ prevPost.url | url }}"> <<< </a>
       </h1>
     {% endif %}
-        <a style="width: auto;display:flex;justify-content: center;" class="next" href="/portfolio"><img class="logo" src="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/stars1040invert.png?v=1735942380941"></a>
+        <a style="width: auto;display:flex;justify-content: center;" class="next" href="/portfolio"><img class="logo" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}"></a>
       {% if nextPost.url %}
         <h1><a class="next" href="{{ nextPost.url | url }}"> >>> </a></h1>
     {% endif %}

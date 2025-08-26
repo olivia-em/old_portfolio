@@ -3,11 +3,11 @@ layout: layouts/post.njk
 title: TinyDesk VJ
 description: 
 date: 2022-12-22
-thumbnail: https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/DSC_8113.jpeg?v=1738176308228
+thumbnail: {{ "/assets/2decb767-8051-4237-974a-927409aa4233-DSC_8113.JPEG" | url }}
 images: 
-  - https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/DSC_8121.jpeg?v=1738176311939
-  - https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/DSC_8113.jpeg?v=1738176308228
-  - https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/DSC_8108.jpeg?v=1738176304190
+  - {{ "/assets/2decb767-8051-4237-974a-927409aa4233-DSC_8121.JPEG" | url }}
+  - {{ "/assets/2decb767-8051-4237-974a-927409aa4233-DSC_8113.JPEG" | url }}
+  - {{ "/assets/2decb767-8051-4237-974a-927409aa4233-DSC_8108.JPEG" | url }}
 tags: 
   - code 
   - all

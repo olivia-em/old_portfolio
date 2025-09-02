@@ -3,10 +3,10 @@ layout: layouts/post.njk
 title: theNudes
 description: 
 date: 2023-11-14
-thumbnail: /assets/2decb767-8051-4237-974a-927409aa4233-i%20saw%20a%20high%20hill%20and%20on%20it%20a%20form%20shaped%20against%20hard%20air%20(3).jpeg
+thumbnail: /assets/nudes.jpeg
 images: 
 videos:
-  - /assets/95731519-6287-4bbd-a281-712ac2b13fef-theNudes.mp4
+  - /assets/theNudes.mp4
 tags: 
   - vidart 
   - all

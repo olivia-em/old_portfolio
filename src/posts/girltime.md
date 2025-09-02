@@ -24,14 +24,14 @@ media:
   - type: image
     src: /assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7168.JPG
   - type: video
-    src: /assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7219.MOV
+    src: /assets/IMG_7219.MOV
 
 tags:
   - code
   - vidart
   - all
 blurb: |
-  Girl Time is an immersive installation, created in collaboration with Prish Jain and dedicated to sharing femme stories. This installation draws inspiration from the deeply personal conversations that unfold in women's restrooms—spaces of vulnerability, camaraderie, and unfiltered expression. Through interactive and generative elements, Girl Time invites users to step into the experience of being female-identifying, capturing its beauty and struggle. No two users will have the same experience, the same way no two women do.
+  Girl Time is an immersive installation, created in collaboration with Prisha Jain and dedicated to sharing femme stories. This installation draws inspiration from the deeply personal conversations that unfold in women's restrooms—spaces of vulnerability, camaraderie, and unfiltered expression. Through interactive and generative elements, Girl Time invites users to step into the experience of being female-identifying, capturing its beauty and struggle. No two users will have the same experience, the same way no two women do.
 
   Girl Time comes together using Arduino, p5.js, and Tone.js. The removable objects are magnetized, and the magnets are detected by hall effect sensors. Through serial communication, the sensors send messages to p5, which initiates sound and video corresponding to the object, with added randomness.
 skills:

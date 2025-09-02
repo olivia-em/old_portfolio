@@ -3,16 +3,16 @@ title: Encode
 date: 2023-12-07
 animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-circles2.mp4
 sites:
-  - image: /assets/2decb767-8051-4237-974a-927409aa4233-Screenshot%202025-02-06%20at%202.12.52%E2%80%AFPM.png
+  - image: /assets/encode1.png
     link: https://olivia-em.github.io/codeyourway/encode/encode1/index.html
     title: Encode 1
-  - image: /assets/2decb767-8051-4237-974a-927409aa4233-Screenshot%202025-02-06%20at%202.13.47%E2%80%AFPM.png
+  - image: /assets/encode2.png
     link: https://olivia-em.github.io/codeyourway/encode/encode2/index.html
     title: Encode 2
-  - image: /assets/2decb767-8051-4237-974a-927409aa4233-Screenshot%202025-02-06%20at%202.14.22%E2%80%AFPM.png
+  - image: /assets/encode3.png
     link: https://olivia-em.github.io/codeyourway/encode/encode3/index.html
     title: Encode 3
-  - image: /assets/2decb767-8051-4237-974a-927409aa4233-Screenshot%202025-02-06%20at%202.14.51%E2%80%AFPM.png
+  - image: /assets/encode4.png
     link: https://olivia-em.github.io/codeyourway/encode/encode4/index.html
     title: Encode 4
   - image: /assets/95731519-6287-4bbd-a281-712ac2b13fef-encode7.jpg

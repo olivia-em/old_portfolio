@@ -51,7 +51,7 @@ Your browser does not support the video tag.
       
       {%- if post.data.images and post.data.images.length > 0 -%}
       {%- for image in post.data.images -%}
-        <img src='{{ image }}' class="photos">
+        <img src='{{ image | url }}' class="photos">
 
       {%- endfor -%}
     {%- endif -%}

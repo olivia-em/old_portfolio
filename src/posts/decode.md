@@ -6,13 +6,13 @@ sites:
   - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-rects.mp4
     link: https://olivia-em.github.io/codeyourway/decode/decode8/index.html
     title: Decode 8
-  - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-Comp%201.mp4
+  - animation: /assets/decode10.png
     link: https://olivia-em.github.io/codeyourway/decode/decode10/index.html
     title: Decode 10
-  - animation: /assets/decode10.mp4
+  - animation: /assets/decode11.png
     link: https://olivia-em.github.io/codeyourway/decode/decode11/index.html
     title: Decode 11
-  - image: /assets/decode11.png
+  - image: /assets/2decb767-8051-4237-974a-927409aa4233-decode1-min.png
     link: https://olivia-em.github.io/codeyourway/decode/decode1/index.html
     title: Decode 1
   - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3.mp4

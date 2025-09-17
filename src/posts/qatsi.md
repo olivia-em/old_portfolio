@@ -6,7 +6,8 @@ date: 2025-02-14
 thumbnail: /assets/95731519-6287-4bbd-a281-712ac2b13fef-qatsi.jpg
 images: 
 videos:
-  - /assets/qatsi.MP4
+youtube:
+  - Qy7D2O2zytc?si=By_Q7OhpB2Yb-SRM
 tags: 
   - vidart 
   - all

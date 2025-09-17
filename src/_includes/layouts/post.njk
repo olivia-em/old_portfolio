@@ -24,6 +24,19 @@ Your browser does not support the video tag.
 
       {%- endfor -%}
     {%- endif -%}
+    
+    {%- if post.data.youtube and post.data.youtube.length > 0 -%}
+      {%- for youtubeId in post.data.youtube -%}
+      
+       <iframe class="videos" 
+               src="https://www.youtube.com/embed/{{ youtubeId }}" 
+               frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+               allowfullscreen>
+       </iframe>
+
+      {%- endfor -%}
+    {%- endif -%}
       
 {%- if post.data.media and post.data.media.length > 0 -%}
   {%- for item in post.data.media -%}

@@ -6,7 +6,8 @@ date: 2025-03-22
 thumbnail: /assets/95731519-6287-4bbd-a281-712ac2b13fef-still9.png
 images: 
 videos:
-  - /assets/AEpromoS25_final.mp4
+youtube:
+  - T4Bfi2lBTCE?si=HIMZwi1unTYMNuOh
 tags: 
   - vidart 
   - all

@@ -6,7 +6,8 @@ date: 2022-10-14
 thumbnail: /assets/2decb767-8051-4237-974a-927409aa4233-areyoufree.png
 images: 
 videos:
-  - /assets/2decb767-8051-4237-974a-927409aa4233-areyoufree.mp4
+youtube:
+  - L0l2DRwhbiM?si=cDGScgRPlJtVO6_a
 tags: 
   - vidart 
   - all

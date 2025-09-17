@@ -23,8 +23,6 @@ media:
     src: /assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7103.JPG
   - type: image
     src: /assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7168.JPG
-  - type: video
-    src: /assets/IMG_7219.MOV
 
 tags:
   - code

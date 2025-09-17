@@ -6,7 +6,8 @@ date: 2023-11-14
 thumbnail: /assets/nudes.jpeg
 images: 
 videos:
-  - /assets/theNudes.mp4
+youtube:
+  - 1ZA07QSfYww?si=mABb2hq63fY35epE
 tags: 
   - vidart 
   - all

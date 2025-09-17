@@ -3,11 +3,11 @@ layout: layouts/post.njk
 title: TinyDesk VJ
 description: 
 date: 2022-12-22
-thumbnail: /assets/2decb767-8051-4237-974a-927409aa4233-DSC_8113.JPEG
+thumbnail: /assets/2decb767-8051-4237-974a-927409aa4233-DSC8113.JPEG
 images: 
-  - /assets/2decb767-8051-4237-974a-927409aa4233-DSC_8121.JPEG
-  - /assets/2decb767-8051-4237-974a-927409aa4233-DSC_8113.JPEG
-  - /assets/2decb767-8051-4237-974a-927409aa4233-DSC_8108.JPEG
+  - /assets/2decb767-8051-4237-974a-927409aa4233-DSC8121.JPEG
+  - /assets/2decb767-8051-4237-974a-927409aa4233-DSC8113.JPEG
+  - /assets/2decb767-8051-4237-974a-927409aa4233-DSC8108.JPEG
 tags: 
   - code 
   - all

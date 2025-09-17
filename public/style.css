@@ -536,6 +536,14 @@ div.tag {
   cursor: pointer;
 }
 
+/* Specific styling for YouTube iframes */
+iframe.videos {
+  width: 65vw;
+  height: 36.6vw; /* 16:9 aspect ratio */
+  max-width: 800px;
+  max-height: 450px;
+}
+
 div.projects > h4 > a {
   font-size: 0.75rem;
   background-color: #000000;

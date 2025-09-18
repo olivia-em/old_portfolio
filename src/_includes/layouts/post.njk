@@ -6,116 +6,133 @@ templateClass: tmpl-home
 {# This is the template for individual blog posts–it builds the front matter properties into the page #}
 
 <div class="wrapper home">
-  <div class="post-content">
+  <div class="home-content">
     
-    
-    <div class="imgs-container">
-
-{%- for post in collections.posts -%}
-  {%- if post.url == page.url -%} {# Check if it's the current post #}
-    
-         {%- if post.data.videos and post.data.videos.length > 0 -%}
-      {%- for video in post.data.videos -%}
+    {# Left Navigation Column #}
+    <div class="home-nav">
+      <div class="olivia"> 
+        <img class="logo" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}">
+        <a href="{{ '/' | url }}"><h1>OLIVIA LEE</h1></a>
+      </div>
       
-       <video class="videos" controls>
-  <source src='{{ video }}' >
-Your browser does not support the video tag.
-</video>
-
-      {%- endfor -%}
-    {%- endif -%}
-    
-    {%- if post.data.youtube and post.data.youtube.length > 0 -%}
-      {%- for youtubeId in post.data.youtube -%}
+      <div class="nav">
+        <h3><a href="{{ '/' | url }}">> Back to Projects</a></h3>
+        <h3><a href="{{ '/about' | url }}">> About</a></h3>
+        <h3><a target="_blank" href="https://github.com/olivia-em">> Github</a></h3>
+        
+        {# Project-specific links #}
+        {%- for post in collections.posts -%}
+          {%- if post.url == page.url -%}
+            {%- if post.data.documentation and post.data.documentation.length > 0 -%}
+              {%- for doc in post.data.documentation -%}
+                <h3><a target="_blank" href="{{doc}}">> Documentation</a></h3>
+              {%- endfor -%}
+            {%- endif -%}
+            {%- if post.data.repo and post.data.repo.length > 0 -%}
+              {%- for rep in post.data.repo -%}
+                <h3><a target="_blank" href="{{ rep.link }}">> {{ rep.title }}</a></h3>
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
       
-       <iframe class="videos" 
-               src="https://www.youtube.com/embed/{{ youtubeId }}" 
-               frameborder="0" 
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-               allowfullscreen>
-       </iframe>
-
-      {%- endfor -%}
-    {%- endif -%}
-      
-{%- if post.data.media and post.data.media.length > 0 -%}
-  {%- for item in post.data.media -%}
-    {%- if item.type == 'video' -%}
-      <video src='{{ item.src | url }}' class="photos video-stable" controls style="transform: none !important; object-fit: cover;"></video>
-    {%- else -%}
-      <img src='{{ item.src | url }}' class="photos">
-    {%- endif -%}
-  {%- endfor -%}
-{%- endif -%}
-      
-      
-      {%- if post.data.images and post.data.images.length > 0 -%}
-      {%- for image in post.data.images -%}
-        <img src='{{ image | url }}' class="photos">
-
-      {%- endfor -%}
-    {%- endif -%}
-      
-  {%- endif -%}
-{%- endfor -%}
-
-  
-  </div>
-    
-    
-  
-    <div class="post-nav">
-    
-    {# The post front matter includes the title property #}
-    
-    <h1 class="postTitle">{{title}}</h1>
-      
-      
-      
-   
-      
-  
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.blurb and post.data.blurb.length > 0 -%}
-  <div class="cont">    
-<p class="desc">
-{{ post.data.blurb | replace('\n\n', '<br><br>') | safe }}
-</p>
-</div>
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}
-
-         {{ content | safe }} 
-      
-      {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.documentation and post.data.documentation.length > 0 -%}
-      {%- for doc in post.data.documentation -%}
-    <div class="skill-list">
-  <a target="_blank" href="{{documentation}}"><h4 style="font-size: 1.5rem; color: #fe2f20;">
-    Documentation!
-    </h4></a>
-</div>
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%} 
-   
+      {# Navigation between posts #}
+      <div class="nav" style="margin-top: 2rem;">
+        {% if prevPost.url %}
+          <h3><a href="{{ prevPost.url | url }}">> Previous</a></h3>
+        {% endif %}
+        {% if nextPost.url %}
+          <h3><a href="{{ nextPost.url | url }}">> Next</a></h3>
+        {% endif %}
+      </div>
     </div>
-    
-    <div class="controls">
-    {# The previous and next post data is added in .eleventy.js #}
-  {% if prevPost.url %}
-      <h1 >
-        <a class="previous" href="{{ prevPost.url | url }}"> <<< </a>
-      </h1>
-    {% endif %}
-        <a style="width: auto;display:flex;justify-content: center;" class="next" href="{{ '/' | url }}"><img class="logo" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}"></a>
-      {% if nextPost.url %}
-        <h1><a class="next" href="{{ nextPost.url | url }}"> >>> </a></h1>
-    {% endif %}
+
+    {# Right Content Area #}
+    <div class="post-main-content">
+      
+      {# Title and Description #}
+      <div class="post-header">
+        <h1 class="postTitle">{{title}}</h1>
+        
+        {%- for post in collections.posts -%}
+          {%- if post.url == page.url -%}
+            {%- if post.data.blurb and post.data.blurb.length > 0 -%}
+              <p class="post-description">
+                {{ post.data.blurb | replace('\n\n', '<br><br>') | safe }}
+              </p>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        
+        {# Skills/Tools Used #}
+        {%- for post in collections.posts -%}
+          {%- if post.url == page.url -%}
+            {%- if post.data.skills and post.data.skills.length > 0 -%}
+              <div class="post-skills">
+                <span class="skills-label">Tools:</span>
+                {%- for skill in post.data.skills -%}
+                  <span class="skill-tag">{{skill}}</span>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {# Media Container #}
+      <div class="post-media-container">
+        {%- for post in collections.posts -%}
+          {%- if post.url == page.url -%}
+            
+            {# Videos #}
+            {%- if post.data.videos and post.data.videos.length > 0 -%}
+              {%- for video in post.data.videos -%}
+                <video class="post-media" controls>
+                  <source src='{{ video }}'>
+                  Your browser does not support the video tag.
+                </video>
+              {%- endfor -%}
+            {%- endif -%}
+            
+            {# YouTube Videos #}
+            {%- if post.data.youtube and post.data.youtube.length > 0 -%}
+              {%- for youtubeId in post.data.youtube -%}
+                <iframe class="post-media youtube-embed" 
+                        src="https://www.youtube.com/embed/{{ youtubeId }}" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+              {%- endfor -%}
+            {%- endif -%}
+            
+            {# Media Array (mixed images/videos) #}
+            {%- if post.data.media and post.data.media.length > 0 -%}
+              {%- for item in post.data.media -%}
+                {%- if item.type == 'video' -%}
+                  <video src='{{ item.src | url }}' class="post-media" controls></video>
+                {%- else -%}
+                  <img src='{{ item.src | url }}' class="post-media">
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            
+            {# Images #}
+            {%- if post.data.images and post.data.images.length > 0 -%}
+              {%- for image in post.data.images -%}
+                <img src='{{ image | url }}' class="post-media">
+              {%- endfor -%}
+            {%- endif -%}
+            
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {# Additional Content from Markdown #}
+      <div class="post-content-text">
+        {{ content | safe }}
+      </div>
       
     </div>
   </div>

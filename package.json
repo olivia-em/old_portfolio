@@ -5,8 +5,9 @@
   "homepage": "https://olivia-em.github.io/portfolio",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "NODE_ENV=production eleventy",
-    "predeploy": "npm ci && npm run build",
+    "build": "eleventy",
+    "build:github": "GITHUB_PAGES=true eleventy",
+    "predeploy": "npm ci && npm run build:github",
     "deploy": "npx gh-pages -d build"
   },
   "dependencies": {

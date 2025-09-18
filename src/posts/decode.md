@@ -25,54 +25,17 @@ tags:
   - code 
   - all
 repo: 
-  - https://github.com/olivia-em/codeyourway
-blog:
- - https://olivia-em.github.io/docblog/cyw/week2/
+  - title: Github Repository
+    link: https://github.com/olivia-em/codeyourway
+  - title: Workflow
+    link: https://olivia-em.github.io/docblog/cyw/week2/
 skills:
   - p5.js
   - WEBGL
 layout: layouts/post.njk
+blurb: Decoding is a learning / experimentation process where you predict a sketch just based on reading the code. Then, you take some time to rewrite the code into something of your own creation. This helps me understand and therefore predict the functionality of various code conventions and then train myself to use those conventions in my own style. This is a selection of Javascript sketches I made using this process, and all are either interactive or animated. In the repository link above, each .js file has the original code commented out at the bottom.
 ---
 
-
-<div class="cont">
-  
-  <div class="skills">   
-        {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.blog and post.data.blog.length > 0 -%}
-      {%- for blo in post.data.blog -%}
-
- <h4 style="color: #fe2f20;"> <a target="_blank" style="color: #fe2f20;" href="{{blog}}">
-    Workflow
-    </a></h4>
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%} 
-      
-      {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.repo and post.data.repo.length > 0 -%}
-      {%- for rep in post.data.repo -%}
-  <h4 style="color: #fe2f20;"><a target="_blank" style="color: #fe2f20;" href="{{repo}}">
-    Repository
-   </a></h4>
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%} 
-      </div>      
-  
-  <p class="desc">
-    <i>Decoding</i> is a learning / experimentation process where you predict a sketch just based on reading the code. Then, you take some time to rewrite the code into
-    something of your own creation. This helps me understand and therefore predict the functionality of various code conventions and then train myself to use those
-    conventions in my own style. 
-  </p>
-  <p class="desc">
-    This is a selection of Javascript sketches I made using this process, and all are either interactive or animated. In the repository link above, each .js file has the original code commented out at the bottom. 
-    </p>
-      </div>
 <div class="sites-container">
   {%- for post in collections.posts -%}                           
     {%- if post.url == page.url -%} 
@@ -101,21 +64,4 @@ layout: layouts/post.njk
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
-</div>
-
-
-  
-<div class="skill-list">       
-  <h4 style="font-size: 1rem; color: #fe2f20;">Softwares & Languages Used:</h4> 
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-       <h4 style="font-size: 1rem;"> {{skill}} </h4> 
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>
+</div>  

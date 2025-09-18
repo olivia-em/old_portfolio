@@ -19,8 +19,10 @@ templateClass: tmpl-home
         <h3><a href="{{ '/' | url }}">> Back to Projects</a></h3>
         <h3><a href="{{ '/about' | url }}">> About</a></h3>
         <h3><a target="_blank" href="https://github.com/olivia-em">> Github</a></h3>
-        
-        {# Project-specific links #}
+      </div>
+      
+      {# Project-specific links #}
+      <div class="nav project-links">
         {%- for post in collections.posts -%}
           {%- if post.url == page.url -%}
             {%- if post.data.documentation and post.data.documentation.length > 0 -%}
@@ -28,17 +30,40 @@ templateClass: tmpl-home
                 <h3><a target="_blank" href="{{doc}}">> Documentation</a></h3>
               {%- endfor -%}
             {%- endif -%}
-            {%- if post.data.repo and post.data.repo.length > 0 -%}
-              {%- for rep in post.data.repo -%}
-                <h3><a target="_blank" href="{{ rep.link }}">> {{ rep.title }}</a></h3>
+            {%- if post.data.blog and post.data.blog.length > 0 -%}
+              {%- for blog in post.data.blog -%}
+                <h3><a target="_blank" href="{{blog}}">> Workflow</a></h3>
               {%- endfor -%}
+            {%- endif -%}
+            {%- if post.data.repo -%}
+              {%- if post.data.repo.length -%}
+                {# repo is an array #}
+                {%- for rep in post.data.repo -%}
+                  <h3><a target="_blank" href="{{ rep.link }}">> {{ rep.title }}</a></h3>
+                {%- endfor -%}
+              {%- else -%}
+                {# repo is a single URL string #}
+                <h3><a target="_blank" href="{{ post.data.repo }}">> Github Repository</a></h3>
+              {%- endif -%}
+            {%- endif -%}
+            
+            {# Skills/Tools in sidebar #}
+            {%- if post.data.skills and post.data.skills.length > 0 -%}
+              <div class="sidebar-skills">
+                <h4 class="skills-title">Tools:</h4>
+                <div class="skills-list-sidebar">
+                  {%- for skill in post.data.skills -%}
+                    <span class="skill-tag-sidebar">{{skill}}</span>
+                  {%- endfor -%}
+                </div>
+              </div>
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
       </div>
       
-      {# Navigation between posts #}
-      <div class="nav" style="margin-top: 2rem;">
+      {# Navigation between posts at bottom #}
+      <div class="nav post-nav-bottom">
         {% if prevPost.url %}
           <h3><a href="{{ prevPost.url | url }}">> Previous</a></h3>
         {% endif %}
@@ -61,20 +86,6 @@ templateClass: tmpl-home
               <p class="post-description">
                 {{ post.data.blurb | replace('\n\n', '<br><br>') | safe }}
               </p>
-            {%- endif -%}
-          {%- endif -%}
-        {%- endfor -%}
-        
-        {# Skills/Tools Used #}
-        {%- for post in collections.posts -%}
-          {%- if post.url == page.url -%}
-            {%- if post.data.skills and post.data.skills.length > 0 -%}
-              <div class="post-skills">
-                <span class="skills-label">Tools:</span>
-                {%- for skill in post.data.skills -%}
-                  <span class="skill-tag">{{skill}}</span>
-                {%- endfor -%}
-              </div>
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}

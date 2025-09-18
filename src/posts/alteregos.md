@@ -15,26 +15,12 @@ blurb:
 skills:
   - Adobe Premiere Pro
 ---
- <br>
+
+
  <div class="cont">
-<p class="desc">
-  As the Graduate Teaching Assistant for <i>Alter Egos: Assuming New Identities Through Costume and Performance</i>, I was responsible for preparing promotional materials
+   <p class="desc">
+    As the Graduate Teaching Assistant for <i>Alter Egos: Assuming New Identities Through Costume and Performance</i>, I was responsible for preparing promotional materials
   for the end of semester performance. I edited this video in Premiere from footage of previous performances. I wanted the class/performance to seem like an eclectic party, and I played with blending modes to 
   layer performances (especially in pairs) to connect to the concept of duality. 
- </p>
-  </div>
-<div class="skill-list">       
-  <h4 style="font-size: 1rem;color: #fe2f20;">Softwares Used:</h4> 
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-      <h4 style="font-size: 1rem;"> {{skill}} </h4> 
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>
-  
+    </p>
+ </div>

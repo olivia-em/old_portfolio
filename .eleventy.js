@@ -50,10 +50,11 @@ module.exports = function (eleventyConfig) {
   });
 
   // Determine the path prefix based on environment
-  const isProduction = process.env.NODE_ENV === 'production';
-  const pathPrefix = isProduction ? '/portfolio/' : '/';
+  const isGithubPages = process.env.GITHUB_PAGES === 'true';
+  const pathPrefix = isGithubPages ? '/portfolio/' : '/';
 
 console.log('Path prefix:', pathPrefix);
+console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
   
   return {
     dir: {

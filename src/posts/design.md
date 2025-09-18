@@ -20,24 +20,11 @@ images:
 tags:
   - static
   - all
-blurb:
+blurb: A collection of static art and design work including posters, digital illustrations, collages, and graphic design pieces created with various digital tools and traditional techniques.
 skills:
   - Figma
   - Adobe Suite
   - Collage
 ---
 
-<div class="skill-list">       
-  <h4 style="font-size: 1rem; color: #fe2f20;">Softwares & Languages Used:</h4>
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-     <h4 style="font-size: 1rem;"> {{skill}} </h4> 
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>
+

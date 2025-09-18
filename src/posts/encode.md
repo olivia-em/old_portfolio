@@ -22,82 +22,43 @@ tags:
   - code 
   - all
 repo: 
-  - https://github.com/olivia-em/codeyourway
-blog:
- - https://olivia-em.github.io/docblog/cyw/week1/
+  - title: Github Repository
+    link: https://github.com/olivia-em/codeyourway
+  - title: Workflow
+    link: https://olivia-em.github.io/docblog/cyw/week1/
 skills:
   - p5.js
   - WEBGL
+blurb: Encoding is a learning / experimentation process where you look at a sketch and attempt to recreate it in pseudocode. Then, you take some time to rewrite the code into something of your own creation. This helps me breakdown an output into smaller components that can be described by and then train myself to use those to recreate it. This can also help you recreate non-coded art into Javascript. This is a selection of Javascript sketches I made using this process, and all are either interactive or animated. In the repository link above, each .js file has the original code commented out at the bottom. 
 layout: layouts/post.njk
 ---
-
-
-<div class="cont">
-  <div class="skills">   
-        {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.blog and post.data.blog.length > 0 -%}
-      {%- for blo in post.data.blog -%}
-
-
- <h4 style="color: #fe2f20;"> <a target="_blank" style="color: #fe2f20;" href="{{blog}}">
-    Workflow
-    </a></h4>
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%} 
-      
-      {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.repo and post.data.repo.length > 0 -%}
-      {%- for rep in post.data.repo -%}
-  <h4 style="color: #fe2f20;"><a target="_blank" style="color: #fe2f20;" href="{{repo}}">
-    Repository
-   </a></h4>
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%} 
-      </div>      
-  
-  <p class="desc">
-    <i>Encoding</i> is a learning / experimentation process where you look at a sketch and attempt to recreate it in pseudocode. Then, you take some time to rewrite the code into
-    something of your own creation. This helps me breakdown an output into smaller components that can be described by and then train myself to use those to recreate it. This can also help you 
-    recreate non-coded art into Javascript.
-  </p>
-  <p class="desc">
-    This is a selection of Javascript sketches I made using this process, and all are either interactive or animated. In the repository link above, each .js file has the original code commented out at the bottom. 
-    </p>
-      </div>
+   
 <div class="sites-container">
-{%- for post in collections.posts -%}                           
-  {%- if post.url == page.url -%} 
-    {%- for site in post.data.sites -%}
-    <a target="_blank" href="{{ site.link }}">
-      <div style="background-image: url('{{ site.image | url }}');" class="sites">
-        <h4>
-          < {{ site.title }} >
-        </h4>
-      </div>
-    </a>
-  {%- endfor -%}
-  {%- endif -%}
-{%- endfor -%}
-      </div>
-  
-  
-<div class="skill-list">       
-  <h4 style="font-size: 1rem; color: #fe2f20;">Softwares & Languages Used:</h4> 
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-       <h4 style="font-size: 1rem;"> {{skill}} </h4> 
+  {%- for post in collections.posts -%}                           
+    {%- if post.url == page.url -%} 
+      {%- for site in post.data.sites -%}
+        <a target="_blank" href="{{ site.link }}">
+          {% if site.animation %}
+            <!-- Render video if animation exists -->
+            <div class="sites video-background">
+              <video autoplay loop muted playsinline class="video-content">
+                <source src="{{ site.animation | url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h4 class="overlay-content">
+                < {{ site.title }} >
+              </h4>
+            </div>
+          {% else %}
+            <!-- Otherwise, use image as background -->
+            <div class="sites" style="background-image: url('{{ site.image | url }}');">
+              <h4 class="overlay-content">
+                < {{ site.title }} >
+              </h4>
+            </div>
+          {% endif %}
+        </a>
       {%- endfor -%}
     {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>
+  {%- endfor -%}
+</div>  

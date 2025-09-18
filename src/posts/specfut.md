@@ -14,10 +14,11 @@ tags:
 blurb:
 skills:
   - Adobe After Effects
-documentation: 
-  - https://olivia-em.github.io/docblog/projects/specfut/
+repo:
+  - title: Workflow  
+    link: https://olivia-em.github.io/docblog/projects/specfut/
 ---
- <br>
+
  <div class="cont">
    <p class="desc">
      This project explores the feeling of being overwhelmed by too many possibilities. What started as an idea to compare people’s lives in the same time frame shifted into an emotional journey, taking a simple walk home and turning it into a reflection on choice. My collaborator Devan and I combined contrasting visuals like high-tech vs. nature and simple vs. grand moments to express the tension between these paths.
@@ -28,18 +29,5 @@ documentation:
  We filmed separately, then brought everything into After Effects for editing. The pacing was driven by audio, which we first cut in Ableton, and then synced to the visuals. After some rounds of edits and a few challenges along the way (always triple-check your backups), we ended up with a piece that combines abstract storytelling and emotional depth.
 </p>
   </div>
-<div class="skill-list">       
-  <h4 style="font-size: 1rem;color: #fe2f20;">Softwares Used:</h4> 
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-         <h4 style="font-size: 1rem;"> {{skill}} </h4> 
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>
+
   

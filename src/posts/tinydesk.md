@@ -16,21 +16,8 @@ skills:
   - p5.js
   - Arduino IDE
   - ML5 Body Segmentation
-documentation: 
-  - https://olivia-em.github.io/docblog/projects/tinydeskVJ/
+repo:
+  - title: Workflow
+    link: https://olivia-em.github.io/docblog/projects/tinydeskVJ/
 ---
 
-<div class="skill-list">       
-  <h4 style="font-size: 1rem; color: #fe2f20;">Softwares Used:</h4> 
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-         <h4 style="font-size: 1rem;"> {{skill}} </h4> 
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>

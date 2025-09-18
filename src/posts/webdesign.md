@@ -1,16 +1,16 @@
 ---
-title: Smaller Projects
+title: Smaller WebDev Projects
 thumbnail: /assets/2decb767-8051-4237-974a-927409aa4233-justbones.png
 date: 2023-12-07
 sites:
-  - image: /assets/95731519-6287-4bbd-a281-712ac2b13fef-port-ex.jpg
-    link: https://oliviaemlee.glitch.me/
-    title: Former Portfolio
+  # - image: /assets/95731519-6287-4bbd-a281-712ac2b13fef-port-ex.jpg
+  #   link: https://oliviaemlee.glitch.me/
+  #   title: Former Portfolio
   - image: /assets/2decb767-8051-4237-974a-927409aa4233-justbones.png
     link: https://olivia-em.github.io/justBones/
     title: justBones
   - image: /assets/2decb767-8051-4237-974a-927409aa4233-docblog.png
-    link: https://docblog-olee.glitch.me/
+    link: https://olivia-em.github.io/docblog/
     title: ITP Documentation Blog
   - image: /assets/2decb767-8051-4237-974a-927409aa4233-desktopp.png
     link: https://olivia-em.github.io/dsgn1020/
@@ -38,9 +38,10 @@ skills:
   - Wordpress
   - Glitch
   - Github Pages
+# blurb: A collection of smaller web development projects showcasing various skills and experiments across different platforms and technologies.
 ---
 
-<div class="sites-container">
+<!-- <div class="sites-container">
 {%- for post in collections.posts -%}                           
   {%- if post.url == page.url -%} 
     {%- for site in post.data.sites -%}
@@ -54,20 +55,35 @@ skills:
   {%- endfor -%}
   {%- endif -%}
 {%- endfor -%}
-      </div>
-  
-  
-<div class="skill-list">       
-  <h4 style="font-size: 1rem; color: #fe2f20;">Softwares & Languages Used:</h4> 
-      <div class="skills">   
-    {%- for post in collections.posts -%}
-  {%- if post.url == page.url -%}
-    {%- if post.data.skills and post.data.skills.length > 0 -%}
-      {%- for skill in post.data.skills -%}
-        <h4 style="font-size: 1rem;"> {{skill}} </h4> 
+</div>
+ -->
+
+<div class="sites-container">
+  {%- for post in collections.posts -%}                           
+    {%- if post.url == page.url -%} 
+      {%- for site in post.data.sites -%}
+        <a target="_blank" href="{{ site.link }}">
+          {% if site.animation %}
+            <!-- Render video if animation exists -->
+            <div class="sites video-background">
+              <video autoplay loop muted playsinline class="video-content">
+                <source src="{{ site.animation | url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h4 class="overlay-content">
+                < {{ site.title }} >
+              </h4>
+            </div>
+          {% else %}
+            <!-- Otherwise, use image as background -->
+            <div class="sites" style="background-image: url('{{ site.image | url }}');">
+              <h4 class="overlay-content">
+                < {{ site.title }} >
+              </h4>
+            </div>
+          {% endif %}
+        </a>
       {%- endfor -%}
     {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}  
-    </div> 
-  </div>
+  {%- endfor -%}
+</div>  

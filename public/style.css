@@ -344,15 +344,111 @@ div.container > a:hover {
   text-shadow: none;
 }
 
-/* Post */
-.post {
-  place-items: normal;
+/* Post Layout Styles */
+.post-main-content {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  margin-left: 25vw;
 }
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
 .postTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ffffff;
   line-height: 1.1;
   text-shadow: #fe2f20 2px 0 1px;
+  margin-bottom: 1rem;
+}
+
+.post-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  max-width: 60ch;
+}
+
+.post-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills-label {
+  color: #fe2f20;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.skill-tag {
+  background-color: #333;
+  color: #ffffff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.post-media-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post-media {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.youtube-embed {
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+}
+
+.post-content-text {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.post-content-text h4 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Mobile styles for posts */
+@media screen and (max-width: 940px) {
+  .post-main-content {
+    width: 100vw;
+    margin-left: 0;
+    padding: 10px;
+    max-height: none;
+    overflow-y: visible;
+  }
+  
+  .postTitle {
+    font-size: 2rem;
+  }
+  
+  .post-description {
+    font-size: 0.9rem;
+  }
+  
+  .youtube-embed {
+    width: 100%;
+    height: 56.25vw; /* 16:9 aspect ratio */
+  }
 }
 .controls {
   display: flex;

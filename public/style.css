@@ -533,7 +533,11 @@ div.container > a:hover {
 
   div.sites-container {
   margin-bottom: 100px;
-}
+  }
+
+  .post-content-text {
+    margin-bottom: 50px;
+  }
   
   .project-links,
   .post-nav-bottom {

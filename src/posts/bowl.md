@@ -4,10 +4,10 @@ date: 2024-12-07
 animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-bowl.mp4
 repo:
   - title: Workflow
-    link: https://incantationbowl.glitch.me/workflow.html
+    link: https://olivia-em.github.io/incantationbowl/workflow.html
 sites:
   - image: /assets/2decb767-8051-4237-974a-927409aa4233-bowl.png
-    link: https://incantationbowl.glitch.me/
+    link: https://olivia-em.github.io/incantationbowl/index.html
     title: Incantation Bowl
     animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-bowl.mp4
 tags:

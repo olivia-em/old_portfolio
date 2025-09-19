@@ -4,7 +4,7 @@ date: 2024-12-07
 animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-kiln.mp4
 sites:
   - image: /assets/2decb767-8051-4237-974a-927409aa4233-mozia-screengrab.png
-    link: https://mozia-2023.glitch.me/
+    link: https://olivia-em.github.io/Mozia2023/
     title: Mozia 2023
     animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-kiln.mp4
 tags: 

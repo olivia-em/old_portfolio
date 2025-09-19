@@ -20,7 +20,7 @@ images:
 tags:
   - static
   - all
-blurb: A collection of static art and design work including posters, digital illustrations, collages, and graphic design pieces created with various digital tools and traditional techniques.
+blurb:
 skills:
   - Figma
   - Adobe Suite

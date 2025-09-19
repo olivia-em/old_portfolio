@@ -897,14 +897,14 @@ div.sites-container {
 
 /* Make single sites larger - only when there's exactly one .sites element */
 div.sites-container .sites:only-child {
-  width: 50vw !important;
+  width: 40vw !important;
   min-width: 300px !important;
   max-width: 600px !important;
 }
 
 /* Increase h4 font size for larger single sites */
 div.sites-container .sites:only-child h4 {
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
 }
 
 div.cont {

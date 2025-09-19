@@ -469,8 +469,10 @@ div.container > a:hover {
 }
 
 .post-content-text p {
-  max-width: 100ch;
-  margin-bottom: 1rem;
+  /* max-width: 100ch; */
+  /* margin-bottom: 1rem; */
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 0.75rem;
 }
 
 .post-content-text h4 {
@@ -911,7 +913,7 @@ div.cont {
   flex-direction: row;
   /*   height: 40vw; */
   width: 70vw;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 div.imgs-container {

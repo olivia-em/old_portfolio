@@ -446,6 +446,18 @@ div.container > a:hover {
   height: 250px;
   max-width: 100%;
   border-radius: 4px;
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+/* Special handling for single YouTube videos */
+.post-media-container:has(.youtube-embed:only-child) {
+  columns: 1;
+}
+
+/* Larger size for single YouTube videos */
+.post-media-container .youtube-embed:only-child {
+  height: 400px;
 }
 
 .post-content-text {

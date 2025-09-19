@@ -18,7 +18,7 @@ sites:
   - animation: /assets/95731519-6287-4bbd-a281-712ac2b13fef-para2.mp4
     link: https://olivia-em.github.io/codeyourway/explore/explore5/index.html
     title: Explore 5
-  - image: /assets/2decb767-8051-4237-974a-927409aa4233-Screenshot%202025-02-06%20at%202.15.29%E2%80%AFPM.png
+  - image: /assets/preloader.png
     link: https://olivia-em.github.io/codeyourway/recode/preLoader/index.html
     title: preLoader
 tags: 

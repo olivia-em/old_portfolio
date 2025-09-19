@@ -522,7 +522,7 @@ div.container > a:hover {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 100vw;
     height: auto;
@@ -600,6 +600,11 @@ div.container > a:hover {
     width: 100%;
     margin: 1rem 0;
     padding: 10px;
+  }
+
+   div.container {
+    flex-direction: column !important;
+    align-content: center !important;
   }
 }
 .controls {

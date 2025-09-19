@@ -97,6 +97,34 @@ body {
   /*   overflow-y: hidden; */
 }
 
+.skills-list-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    /* margin-left: 2vw; */
+    margin-bottom: 1.5rem;
+    justify-content: center;
+  }
+  
+  .skill-tag-sidebar {
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-family: Roboto;
+  }
+
+    .nav .skills-title {
+    font-size: 0.8rem !important;
+    color: #fe2f20 !important;
+    margin: 1.5rem 0rem 0.5rem 2vw !important;
+    /* text-align: left !important; */
+    padding: 0 !important;
+    font-weight: bold !important;
+  }
+  
+
 .post-content {
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +168,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 div.nav > h3 {
@@ -176,7 +204,7 @@ div.proj {
   justify-content: center;
   background-color: #000000;
   /*   padding-left: 5%; */
-  padding-right: 5%;
+  /* padding-right: 5%; */
   /*   padding-top: 5%; */
 }
 
@@ -356,7 +384,7 @@ div.container > a:hover {
   max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   margin-left: 25vw;
   box-sizing: border-box;
 }
@@ -406,7 +434,7 @@ div.container > a:hover {
 .post-media-container {
   columns: 2;
   column-gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
   max-width: 100%;
 }
@@ -494,7 +522,7 @@ div.container > a:hover {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100vw;
     height: auto;
@@ -502,12 +530,37 @@ div.container > a:hover {
     margin-top: 20px;
     padding-bottom: 1rem;
   }
+
+  div.sites-container {
+  margin-bottom: 100px;
+}
   
   .project-links,
   .post-nav-bottom {
     border-top: none;
-    margin-top: 0;
+    margin-top: 1rem;
     padding-top: 0;
+  }
+
+  .project-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Move post navigation to bottom of page on mobile */
+  .post-nav-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #000000;
+    padding: 1rem;
+    /* border-top: 1px solid #333; */
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .post-main-content {
@@ -893,6 +946,7 @@ div.sites-container {
   /*   width: 70vw; */
   align-content: flex-start;
   position: relative;
+  /* margin-bottom: 100px; */
 }
 
 /* Make single sites larger - only when there's exactly one .sites element */
@@ -912,7 +966,7 @@ div.cont {
   flex-wrap: wrap;
   flex-direction: row;
   /*   height: 40vw; */
-  width: 70vw;
+  /* width: 70vw; */
   /* margin-top: 25px; */
 }
 
@@ -1007,7 +1061,7 @@ h5.btw {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 100vw;
@@ -1034,7 +1088,7 @@ h5.btw {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   div.proj {
@@ -1057,7 +1111,7 @@ h5.btw {
   .project-links {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #333;
+    border-top: 1px dashed red;
   }
   
   .sidebar-skills {
@@ -1078,6 +1132,7 @@ h5.btw {
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
+    /* justify-content: center; */
     margin-left: 2vw;
   }
   
@@ -1093,7 +1148,40 @@ h5.btw {
   .post-nav-bottom {
     margin-top: auto;
     padding-top: 1rem;
-    border-top: 1px solid #333;
+    /* border-top: 1px solid #333; */
+  }
+  
+  /* Ensure sidebar tools display properly on desktop */
+  .nav .sidebar-skills {
+    display: block;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .nav .skills-title {
+    font-size: 0.8rem !important;
+    color: #fe2f20 !important;
+    margin: 0 0 0.5rem 2vw !important;
+    text-align: left !important;
+    padding: 0 !important;
+    font-weight: bold !important;
+  }
+  
+  .nav .skills-list-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    justify-content: flex-start;
+    margin-left: 2vw;
+  }
+  
+  .nav .skill-tag-sidebar {
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-family: Roboto;
   }
   div.olivia > h1 > a {
     font-size: 2.2vw;

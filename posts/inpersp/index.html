@@ -137,7 +137,7 @@
       
       <div class="nav post-nav-bottom">
         
-          <h3><a href="/portfolio/posts/girltime/">> Previous</a></h3>
+          <h3><a href="/portfolio/posts/newvoices/">> Previous</a></h3>
         
         
           <h3><a href="/portfolio/posts/alteregos/">> Next</a></h3>
@@ -176,6 +176,11 @@
     
   </main>
     <script>
+      // Add class to body for New Voices page targeting
+      if (window.location.pathname.includes('newvoices')) {
+        document.body.classList.add('newvoices-page');
+      }
+      
       window.addEventListener("load", function () {
             var loader = document.getElementById("preloader");
             loader.classList.add("fade-out");

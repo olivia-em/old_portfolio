@@ -188,6 +188,11 @@ An homage to the 1982 film Koyaanisqatsi, “Qatsi” is a visual exploration of
     
   </main>
     <script>
+      // Add class to body for New Voices page targeting
+      if (window.location.pathname.includes('newvoices')) {
+        document.body.classList.add('newvoices-page');
+      }
+      
       window.addEventListener("load", function () {
             var loader = document.getElementById("preloader");
             loader.classList.add("fade-out");

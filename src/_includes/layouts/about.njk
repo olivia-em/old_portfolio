@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# About page layout with sidebar similar to post layout #}
+
+<div class="wrapper home">
+  <div class="home-content">
+    
+    {# Left Navigation/Links Column #}
+    <div class="home-nav">
+      <div class="olivia"> 
+        <img class="logo" src="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}">
+        <a href="{{ '/' | url }}"><h1>OLIVIA LEE</h1></a>
+      </div>
+      
+      <div class="nav">
+        <h3><a href="{{ '/' | url }}">> Back to Projects</a></h3>
+        <h3><a target="_blank" href="https://github.com/olivia-em">> Github</a></h3>
+      </div>
+      
+      {# Contact Links Section #}
+      <div class="nav project-links">
+        <h3><a target="_blank" href="https://www.instagram.com/oli.via.online/">> Instagram</a></h3>
+        <h3><a target="_blank" href="mailto:olee0114@gmail.com">> Email</a></h3>
+        <h3><a target="_blank" href="https://www.linkedin.com/in/oliviaemlee0114">> LinkedIn</a></h3>
+        <h3><a target="_blank" href="{{ "/assets/Lee.Olivia_Resume.pdf" | url }}">> Resume</a></h3>
+      </div>
+      
+    </div>
+
+    {# Right Content Area #}
+    <div class="about-main-content">
+      
+      {# Text Section Only #}
+      <div class="about-content-wrapper">
+        
+        <div class="about-text-section">
+          <h1 class="about-title">{{ title }}</h1>
+          <div class="about-text">
+            {{ content | safe }}
+          </div>
+        </div>
+        
+      </div>
+      
+      {# Media Collection - similar to posts #}
+      <div class="about-media-container">
+        {%- if media and media.length > 0 -%}
+          {%- for item in media -%}
+            {%- if item.type == 'video' -%}
+              <video src='{{ item.src | url }}' class="about-media" controls></video>
+            {%- else -%}
+              <img src='{{ item.src | url }}' class="about-media" alt="Olivia's photo">
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+      
+    </div>
+  </div>
+</div>

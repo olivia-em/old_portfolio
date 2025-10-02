@@ -98,32 +98,31 @@ body {
 }
 
 .skills-list-sidebar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    /* margin-left: 2vw; */
-    margin-bottom: 1.5rem;
-    justify-content: center;
-  }
-  
-  .skill-tag-sidebar {
-    background-color: #333;
-    color: #ffffff;
-    padding: 0.2rem 0.4rem;
-    border-radius: 3px;
-    font-size: 0.7rem;
-    font-family: Roboto;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  /* margin-left: 2vw; */
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
 
-    .nav .skills-title {
-    font-size: 0.8rem !important;
-    color: #fe2f20 !important;
-    margin: 1.5rem 0rem 0.5rem 2vw !important;
-    /* text-align: left !important; */
-    padding: 0 !important;
-    font-weight: bold !important;
-  }
-  
+.skill-tag-sidebar {
+  background-color: #333;
+  color: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-family: Roboto;
+}
+
+.nav .skills-title {
+  font-size: 0.8rem !important;
+  color: #fe2f20 !important;
+  margin: 1.5rem 0rem 0.5rem 2vw !important;
+  /* text-align: left !important; */
+  padding: 0 !important;
+  font-weight: bold !important;
+}
 
 .post-content {
   display: flex;
@@ -439,15 +438,32 @@ div.container > a:hover {
   max-width: 100%;
 }
 
+/* Target New Voices page specifically using JavaScript-added class */
+
+/* JavaScript-based solution for targeting New Voices page */
+/* The script below will add a class to target the New Voices page specifically */
+.newvoices-page .post-media-container {
+  columns: 2 !important;
+}
+
+/* Apply the 2-column override across all screen sizes for New Voices */
 @media screen and (min-width: 940px) {
   .post-media-container {
     columns: 3;
+  }
+
+  .newvoices-page .post-media-container {
+    columns: 2 !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .post-media-container {
     columns: 4;
+  }
+
+  .newvoices-page .post-media-container {
+    columns: 2 !important;
   }
 }
 
@@ -522,7 +538,7 @@ div.container > a:hover {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100vw;
     height: auto;
@@ -532,13 +548,13 @@ div.container > a:hover {
   }
 
   div.sites-container {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
   }
 
   .post-content-text {
     margin-bottom: 50px;
   }
-  
+
   .project-links,
   .post-nav-bottom {
     border-top: none;
@@ -550,7 +566,7 @@ div.container > a:hover {
     display: flex;
     flex-direction: column;
   }
-  
+
   /* Move post navigation to bottom of page on mobile */
   .post-nav-bottom {
     position: fixed;
@@ -566,7 +582,7 @@ div.container > a:hover {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .post-main-content {
     width: 100vw;
     margin-left: 0;
@@ -574,35 +590,35 @@ div.container > a:hover {
     max-height: none;
     overflow-y: visible;
   }
-  
+
   .postTitle {
     font-size: 1.5rem;
   }
-  
+
   .post-description {
     font-size: 0.75rem;
   }
-  
+
   .post-media-container {
     grid-template-columns: 1fr;
   }
-  
+
   .post-media {
-    max-height: 250px;
+    /* max-height: 250px; */
   }
-  
+
   .youtube-embed {
     height: 56.25vw; /* 16:9 aspect ratio */
     max-height: 300px;
   }
-  
+
   div.skill-list {
     width: 100%;
     margin: 1rem 0;
     padding: 10px;
   }
 
-   div.container {
+  div.container {
     flex-direction: column !important;
     align-content: center !important;
   }
@@ -1064,7 +1080,7 @@ h5.btw {
     padding-bottom: 2rem;
     /*   box-shadow: white 5px -2px 10px; */
   }
-  
+
   /* Home page specific nav styling */
   .tmpl-home .home-nav {
     position: relative;
@@ -1116,18 +1132,18 @@ h5.btw {
     text-align: left;
     font-size: 0.9rem;
   }
-  
+
   .project-links {
     margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px dashed red;
   }
-  
+
   .sidebar-skills {
     margin-top: 1rem;
     padding-top: 0.5rem;
   }
-  
+
   .skills-title {
     font-size: 0.8rem !important;
     color: #fe2f20 !important;
@@ -1136,7 +1152,7 @@ h5.btw {
     padding: 0 !important;
     font-weight: bold !important;
   }
-  
+
   .skills-list-sidebar {
     display: flex;
     flex-wrap: wrap;
@@ -1144,7 +1160,7 @@ h5.btw {
     /* justify-content: center; */
     margin-left: 2vw;
   }
-  
+
   .skill-tag-sidebar {
     background-color: #333;
     color: #ffffff;
@@ -1153,20 +1169,20 @@ h5.btw {
     font-size: 0.7rem;
     font-family: Roboto;
   }
-  
+
   .post-nav-bottom {
     margin-top: auto;
     padding-top: 1rem;
     /* border-top: 1px solid #333; */
   }
-  
+
   /* Ensure sidebar tools display properly on desktop */
   .nav .sidebar-skills {
     display: block;
     margin-top: 1rem;
     padding-top: 0.5rem;
   }
-  
+
   .nav .skills-title {
     font-size: 0.8rem !important;
     color: #fe2f20 !important;
@@ -1175,7 +1191,7 @@ h5.btw {
     padding: 0 !important;
     font-weight: bold !important;
   }
-  
+
   .nav .skills-list-sidebar {
     display: flex;
     flex-wrap: wrap;
@@ -1183,7 +1199,7 @@ h5.btw {
     justify-content: flex-start;
     margin-left: 2vw;
   }
-  
+
   .nav .skill-tag-sidebar {
     background-color: #333;
     color: #ffffff;

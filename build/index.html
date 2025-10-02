@@ -147,6 +147,15 @@
         </h4>
       </div>
     
+  </a><a href="/portfolio/posts/newvoices/" class="project-card" data-tags="posts,webdev,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/portfolio/assets/newvoices.png')">
+        <h4 class="overlay-content">
+          < New Voices >
+        </h4>
+      </div>
+    
   </a><a href="/portfolio/posts/inpersp/" class="project-card" data-tags="posts,webdev,code,all">
     
       <!-- Render Image Thumbnail -->
@@ -288,6 +297,16 @@
   </video>
             <h4 class="overlay-content">
                 < Girl Time >
+            </h4>
+        </div>
+    </a><a href="/posts/newvoices/" class="project-card" data-tags="posts,webdev,all">
+        <div class="projects video-background">
+            <video autoplay loop muted playsinline class="video-content">
+    <source src="/portfolio/assets/newvoices.png" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+            <h4 class="overlay-content">
+                < New Voices >
             </h4>
         </div>
     </a><a href="/posts/inpersp/" class="project-card" data-tags="posts,webdev,code,all">
@@ -433,6 +452,15 @@
         </a> 
     
                
+        <a href="/posts/newvoices/">
+            <div style="background-image: url('/portfolio/assets/newvoices.png')" class="projects">
+                <h4>
+                    < New Voices >
+                </h4>
+            </div>
+        </a> 
+    
+               
         <a href="/posts/inpersp/">
             <div style="background-image: url('/portfolio/assets/LIP.png')" class="projects">
                 <h4>
@@ -557,6 +585,11 @@
     
   </main>
     <script>
+      // Add class to body for New Voices page targeting
+      if (window.location.pathname.includes('newvoices')) {
+        document.body.classList.add('newvoices-page');
+      }
+      
       window.addEventListener("load", function () {
             var loader = document.getElementById("preloader");
             loader.classList.add("fade-out");

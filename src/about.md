@@ -27,7 +27,7 @@ layout: layouts/page.njk
             <i>LinkedIn</i>
           </p></a
         >
-    <a class="a" target="_blank" href="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-Lee.Olivia_Re%CC%81sume%CC%81.pdf" | url }}">
+    <a class="a" target="_blank" href="{{ "/assets/Lee.Olivia_Resume.pdf" | url }}">
           <p>
             <i>Resume</i>
           </p></a

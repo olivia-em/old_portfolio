@@ -14,7 +14,7 @@ media:
   - type: image
     src: /assets/new-article.png
   - type: image
-    src: /assets/old-home2.png
+    src: /assets/old-home2.PNG
   - type: image
     src: /assets/old-article.png
 tags:

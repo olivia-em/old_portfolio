@@ -1260,14 +1260,14 @@ div#preloader > img.logobig.c {
     gap: 1rem;
     columns: unset; /* Override columns property */
   }
-  
+
   .post-media-container:has(.post-media:nth-child(2):last-child) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     columns: unset; /* Override columns property */
   }
-  
+
   .post-media-container:has(.post-media:first-child:last-child) {
     columns: 1; /* Exactly 1 item = 1 column */
   }
@@ -1292,14 +1292,14 @@ div#preloader > img.logobig.c {
     gap: 1rem;
     columns: unset; /* Override columns property */
   }
-  
+
   .post-media-container:has(.post-media:nth-child(2):last-child) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     columns: unset; /* Override columns property */
   }
-  
+
   .post-media-container:has(.post-media:first-child:last-child) {
     columns: 1; /* Exactly 1 item = 1 column */
   }

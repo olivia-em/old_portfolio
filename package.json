@@ -2,7 +2,7 @@
   "name": "olivia-portfolio",
   "version": "0.1.0",
   "description": "A collection of Olivia Lee's past projects.",
-  "homepage": "https://olivia-em.github.io/portfolio",
+  "homepage": "https://olivia-em.github.io/old_portfolio",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
@@ -19,13 +19,13 @@
     "gh-pages": "^6.3.0"
   },
   "engines": {
-  "node": ">=16",
-  "npm": ">=7"
-},
-"repository": {
-  "type": "git",
-  "url": "https://github.com/olivia-em/portfolio.git"
-},
+    "node": ">=16",
+    "npm": ">=7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olivia-em/old_portfolio.git"
+  },
   "glitch": {
     "projectType": "generated_static"
   },
@@ -36,4 +36,3 @@
     "express"
   ]
 }
-

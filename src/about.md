@@ -3,17 +3,17 @@ layout: layouts/about.njk
 title: Hey, I'm Olivia!
 media:
   - type: image
-    src: /assets/olivia-alterego.png
+    src: /old_portfolio/assets/olivia-alterego.png
   - type: image
-    src: /assets/oliviaMOM.PNG
+    src: /old_portfolio/assets/oliviaMOM.PNG
   - type: image
-    src: /assets/IMG_9115.jpg
+    src: /old_portfolio/assets/IMG_9115.jpg
   - type: image
-    src: /assets/IMG_9088.JPG
+    src: /old_portfolio/assets/IMG_9088.JPG
   - type: image
-    src: /assets/IMG_1377.jpg
+    src: /old_portfolio/assets/IMG_1377.jpg
   - type: image
-    src: /assets/IMG_1298.JPG
+    src: /old_portfolio/assets/IMG_1298.JPG
 ---
 
 I'm a front-end developer and multimedia artist interested in poetics, audio/visual technology, and creating interactive web art with HTML, CSS, and JavaScript. I have a background in English literature, archaeology, and translation, which both informs my creative practice and has strengthened my concept development skills.

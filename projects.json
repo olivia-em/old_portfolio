@@ -9,7 +9,7 @@
           "title": "Lessons in Perspective",
           "slug": "inpersp",
           "route": "/posts/inpersp",
-          "image": "/assets/LIP.png",
+          "image": "/old_portfolio/assets/LIP.png",
           "extraImages": [],
           "alt": "Lessons in Perspective - Interactive 3D Poetry",
           "year": 2025,
@@ -29,13 +29,13 @@
           "title": "New Voices",
           "slug": "newvoices",
           "route": "/posts/newvoices",
-          "image": "/assets/newvoices.png",
+          "image": "/old_portfolio/assets/newvoices.png",
           "extraImages": [
-            "/assets/new-home.png",
-            "/assets/new-archive.png",
-            "/assets/new-article.png",
-            "/assets/old-home2.PNG",
-            "/assets/old-article.png"
+            "/old_portfolio/assets/new-home.png",
+            "/old_portfolio/assets/new-archive.png",
+            "/old_portfolio/assets/new-article.png",
+            "/old_portfolio/assets/old-home2.PNG",
+            "/old_portfolio/assets/old-article.png"
           ],
           "alt": "New Voices Website Redesign",
           "year": 2025,
@@ -61,11 +61,11 @@
           "title": "Encode",
           "slug": "encode",
           "route": "/posts/encode",
-          "image": "/assets/encode1.png",
+          "image": "/old_portfolio/assets/encode1.png",
           "extraImages": [
-            "/assets/encode2.png",
-            "/assets/encode3.png",
-            "/assets/encode4.png"
+            "/old_portfolio/assets/encode2.png",
+            "/old_portfolio/assets/encode3.png",
+            "/old_portfolio/assets/encode4.png"
           ],
           "animation": null,
           "alt": "Encode series - Generative sketches",
@@ -79,27 +79,27 @@
             {
               "title": "Encode 1",
               "link": "https://olivia-em.github.io/codeyourway/encode/encode1/index.html",
-              "image": "/assets/encode1.png"
+              "image": "/old_portfolio/assets/encode1.png"
             },
             {
               "title": "Encode 2",
               "link": "https://olivia-em.github.io/codeyourway/encode/encode2/index.html",
-              "image": "/assets/encode2.png"
+              "image": "/old_portfolio/assets/encode2.png"
             },
             {
               "title": "Encode 3",
               "link": "https://olivia-em.github.io/codeyourway/encode/encode3/index.html",
-              "image": "/assets/encode3.png"
+              "image": "/old_portfolio/assets/encode3.png"
             },
             {
               "title": "Encode 4",
               "link": "https://olivia-em.github.io/codeyourway/encode/encode4/index.html",
-              "image": "/assets/encode4.png"
+              "image": "/old_portfolio/assets/encode4.png"
             },
             {
               "title": "Encode 7",
               "link": "https://olivia-em.github.io/codeyourway/encode/encode7/index.html",
-              "image": "/assets/encode7.jpg"
+              "image": "/old_portfolio/assets/encode7.jpg"
             }
           ],
           "url": {
@@ -126,27 +126,27 @@
             {
               "title": "Decode 8",
               "link": "https://olivia-em.github.io/codeyourway/decode/decode8/index.html",
-              "animation": "/assets/rects.mp4"
+              "animation": "/old_portfolio/assets/rects.mp4"
             },
             {
               "title": "Decode 10",
               "link": "https://olivia-em.github.io/codeyourway/decode/decode10/index.html",
-              "image": "/assets/decode10.png"
+              "image": "/old_portfolio/assets/decode10.png"
             },
             {
               "title": "Decode 11",
               "link": "https://olivia-em.github.io/codeyourway/decode/decode11/index.html",
-              "image": "/assets/decode11.png"
+              "image": "/old_portfolio/assets/decode11.png"
             },
             {
               "title": "Decode 1",
               "link": "https://olivia-em.github.io/codeyourway/decode/decode1/index.html",
-              "image": "/assets/decode1-min.png"
+              "image": "/old_portfolio/assets/decode1-min.png"
             },
             {
               "title": "Decode 3",
               "link": "https://olivia-em.github.io/codeyourway/decode/decode3/index.html",
-              "animation": "/assets/decode3.mp4"
+              "animation": "/old_portfolio/assets/decode3.mp4"
             },
             {
               "title": "Decode 4",

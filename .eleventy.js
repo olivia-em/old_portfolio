@@ -3,8 +3,16 @@ const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
-    "html", "njk", "md",
-    "css", "jpeg", "jpg", "png", "svg", "woff", "woff2",
+    "html",
+    "njk",
+    "md",
+    "css",
+    "jpeg",
+    "jpg",
+    "png",
+    "svg",
+    "woff",
+    "woff2",
   ]);
 
   eleventyConfig.addPassthroughCopy("public");
@@ -23,7 +31,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
 
   eleventyConfig.addCollection("posts", function (collection) {
-    const coll = collection.getFilteredByTag("posts").sort((a, b) => b.data.date - a.data.date);
+    const coll = collection
+      .getFilteredByTag("posts")
+      .sort((a, b) => b.data.date - a.data.date);
     for (let i = 0; i < coll.length; i++) {
       coll[i].data["prevPost"] = coll[i - 1];
       coll[i].data["nextPost"] = coll[i + 1];
@@ -32,7 +42,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("proj", function (collection) {
-    const coll = collection.getFilteredByTag("proj").sort((a, b) => b.data.date - a.data.date);
+    const coll = collection
+      .getFilteredByTag("proj")
+      .sort((a, b) => b.data.date - a.data.date);
     for (let i = 0; i < coll.length; i++) {
       coll[i].data["prevPost"] = coll[i - 1];
       coll[i].data["nextPost"] = coll[i + 1];
@@ -41,7 +53,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("category", function (collection) {
-    const coll = collection.getFilteredByTag("category").sort((a, b) => b.data.date - a.data.date);
+    const coll = collection
+      .getFilteredByTag("category")
+      .sort((a, b) => b.data.date - a.data.date);
     for (let i = 0; i < coll.length; i++) {
       coll[i].data["prevPost"] = coll[i - 1];
       coll[i].data["nextPost"] = coll[i + 1];
@@ -50,12 +64,12 @@ module.exports = function (eleventyConfig) {
   });
 
   // Determine the path prefix based on environment
-  const isGithubPages = process.env.GITHUB_PAGES === 'true';
-  const pathPrefix = isGithubPages ? '/portfolio/' : '/';
+  const isGithubPages = process.env.GITHUB_PAGES === "true";
+  const pathPrefix = isGithubPages ? "/old_portfolio/" : "/";
 
-console.log('Path prefix:', pathPrefix);
-console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
-  
+  console.log("Path prefix:", pathPrefix);
+  console.log("GITHUB_PAGES env:", process.env.GITHUB_PAGES);
+
   return {
     dir: {
       input: "src",
@@ -127,7 +141,6 @@ console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
 //   };
 // };
 
-
 // const { DateTime } = require("luxon");
 // const pluginSEO = require("eleventy-plugin-seo");
 
@@ -156,7 +169,7 @@ console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
 //   eleventyConfig.addPassthroughCopy("public");
 
 //   /* From: https://github.com/artstorm/eleventy-plugin-seo
-  
+
 //   Adds SEO settings to the top of all pages
 //   The "glitch-default" bit allows someone to set the url in seo.json while
 //   still letting it have a proper glitch.me address via PROJECT_DOMAIN
@@ -174,13 +187,11 @@ console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
 
 //   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
 
-
 //   module.exports = function (eleventyConfig) {
 //   return {
 //     pathPrefix: "/oliviaem/build/"
 //   };
 // };
-
 
 //   /* Build the collection of posts to list in the site
 //      - Read the Next Steps post to learn how to extend this
@@ -254,7 +265,7 @@ console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
 
 //     return coll;
 //   });
-  
+
 // //    eleventyConfig.addCollection("code", function (collection) {
 //   //     /* The posts collection includes all posts that list 'posts' in the front matter 'tags'
 //   //        - https://www.11ty.dev/docs/collections/
@@ -301,7 +312,6 @@ console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
 //   //     return coll;
 //   //   });
 
-  
 // //   eleventyConfig.addCollection("writing", function (collection) {
 // //     /* The posts collection includes all posts that list 'posts' in the front matter 'tags'
 // //        - https://www.11ty.dev/docs/collections/
@@ -348,7 +358,6 @@ console.log('GITHUB_PAGES env:', process.env.GITHUB_PAGES);
 //     return coll;
 //   });
 
-  
 //   return {
 //     dir: {
 //       input: "src",

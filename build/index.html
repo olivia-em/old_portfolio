@@ -1,404 +1,295 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+    
+    
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      href="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-    />
+  <link rel="icon" href="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="olivia-lee-portfolio" />
-    <link rel="stylesheet" type="text/css" href="public/style.css" />
+  <link rel="stylesheet" type="text/css" href="/public/style.css" />
     <title>Olivia&apos;s Portfolio</title>
 
-    <meta
-      name="description"
-      content="A portfolio with Olivia's recent projects."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta name="author" content="undefined" />
+<meta name="description" content="A portfolio with Olivia&apos;s recent projects.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="undefined">
 
-    <link rel="canonical" href="https://olivia-em.github.io/portfolio/" />
+<link rel="canonical" href="https://olivia-em.github.io/portfolio/">
 
-    <meta property="og:title" content="Olivia's Portfolio" />
-    <meta property="og:type" content="article" />
+<meta property="og:title" content="Olivia&apos;s Portfolio">
+<meta property="og:type" content="article">
 
-    <meta property="og:url" content="https://olivia-em.github.io/portfolio/" />
-    <meta
-      property="og:description"
-      content="A portfolio with Olivia's recent projects."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Lee-Olivia-RecordingFinal.png?v=1701375727440"
-    />
+<meta property="og:url" content="https://olivia-em.github.io/portfolio/">
+<meta property="og:description" content="A portfolio with Olivia&apos;s recent projects.">
+<meta property="og:image" content="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Lee-Olivia-RecordingFinal.png?v=1701375727440">
 
-    <meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary">
 
-    <meta name="twitter:url" content="https://olivia-em.github.io/portfolio/" />
-    <meta name="twitter:title" content="Olivia's Portfolio" />
-    <meta
-      name="twitter:description"
-      content="A portfolio with Olivia's recent projects."
-    />
-    <meta
-      name="twitter:image"
-      content="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Lee-Olivia-RecordingFinal.png?v=1701375727440"
-    />
+<meta name="twitter:url" content="https://olivia-em.github.io/portfolio/">
+<meta name="twitter:title" content="Olivia&apos;s Portfolio">
+<meta name="twitter:description" content="A portfolio with Olivia&apos;s recent projects.">
+<meta name="twitter:image" content="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Lee-Olivia-RecordingFinal.png?v=1701375727440">
+
+
   </head>
   <body>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".filter-btn");
-        const cards = document.querySelectorAll(".project-card");
+       <script>  
+         document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".project-card");
 
-        function adjustCardLayout() {
-          // Get only visible cards
-          const visibleCards = Array.from(cards).filter(
-            (card) => card.style.display !== "none"
-          );
+    function adjustCardLayout() {
+        // Get only visible cards
+        const visibleCards = Array.from(cards).filter(card => card.style.display !== "none");
 
-          if (visibleCards.length === 1) {
+        if (visibleCards.length === 1) {
             visibleCards[0].style.width = "50vw";
-          } else if (visibleCards.length % 2 === 1) {
-            visibleCards[visibleCards.length - 1].style.width = "60vw";
-          }
+        } else if (visibleCards.length % 2 === 1) {
+            visibleCards[visibleCards.length - 1].style.width = "60vw"; 
         }
+    }
 
-        buttons.forEach((button) => {
-          button.addEventListener("click", function (e) {
+    buttons.forEach(button => {
+        button.addEventListener("click", function (e) {
             e.preventDefault();
-            buttons.forEach((btn) => btn.classList.remove("active"));
+            buttons.forEach(btn => btn.classList.remove("active"));
             this.classList.add("active");
 
             const filterTag = this.getAttribute("data-filter");
 
-            cards.forEach((card) => {
-              const tags = card.getAttribute("data-tags").split(",");
-              if (filterTag === "all" || tags.includes(filterTag)) {
-                card.style.display = "block";
-              } else {
-                card.style.display = "none";
-              }
+            cards.forEach(card => {
+                const tags = card.getAttribute("data-tags").split(",");
+                if (filterTag === "all" || tags.includes(filterTag)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
             });
 
-            //  setTimeout(adjustCardLayout, 10); // Delay ensures correct rendering
-          });
+          //  setTimeout(adjustCardLayout, 10); // Delay ensures correct rendering
         });
+    });
 
-        // Run layout fix on page load
-        //  adjustCardLayout();
-      });
+    // Run layout fix on page load
+  //  adjustCardLayout();
+});
 
-      // document.addEventListener("DOMContentLoaded", function () {
-      //     const buttons = document.querySelectorAll(".filter-btn");
-      //     const cards = document.querySelectorAll(".project-card");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const buttons = document.querySelectorAll(".filter-btn");
+//     const cards = document.querySelectorAll(".project-card");
 
-      //     buttons.forEach(button => {
-      //         button.addEventListener("click", function (e) {
-      //             e.preventDefault();
-      //             buttons.forEach(btn => btn.classList.remove("active"));
-      //             this.classList.add("active");
+//     buttons.forEach(button => {
+//         button.addEventListener("click", function (e) {
+//             e.preventDefault();
+//             buttons.forEach(btn => btn.classList.remove("active"));
+//             this.classList.add("active");
 
-      //             const filterTag = this.getAttribute("data-filter");
+//             const filterTag = this.getAttribute("data-filter");
 
-      //             cards.forEach(card => {
-      //                 const tags = card.getAttribute("data-tags").split(","); // Split by space
-      //                 if (filterTag === "all" || tags.includes(filterTag)) {
-      //                     card.style.display = "block";
-      //                 } else {
-      //                     card.style.display = "none";
-      //                 }
-      //             });
-      //         });
-      //     });
-      // });
-    </script>
-    <div id="preloader">
-      <img
-        class="logobig a"
-        src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-      />
-      <img
-        class="logobig b"
-        src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-      />
-      <img
-        class="logobig c"
-        src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-      />
+//             cards.forEach(card => {
+//                 const tags = card.getAttribute("data-tags").split(","); // Split by space
+//                 if (filterTag === "all" || tags.includes(filterTag)) {
+//                     card.style.display = "block";
+//                 } else {
+//                     card.style.display = "none";
+//                 }
+//             });
+//         });
+//     });
+// });
+</script>
+<div id="preloader">
+  <img class="logobig a" src="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png">
+  <img class="logobig b" src="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png">
+  <img class="logobig c" src="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png">
+
     </div>
-    <main class="page-container">
-      <div class="content-wrap">
-        <div class="wrapper home">
-          <div class="home-content">
-            <div class="home-nav">
-              <div class="olivia">
-                <img
-                  class="logo"
-                  src="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-                />
-                <a href="/"><h1>OLIVIA LEE</h1></a>
-              </div>
-              <br />
-              <div class="nav proj">
-                <h3>
-                  <a href="#" class="filter-btn" data-filter="webdev"
-                    >Web Development</a
-                  >
-                </h3>
-                <h3>
-                  <a href="#" class="filter-btn" data-filter="code"
-                    >Creative Code</a
-                  >
-                </h3>
-                <h3>
-                  <a href="#" class="filter-btn" data-filter="vidart">Video</a>
-                </h3>
-                <h3><a href="/posts/design">Static Design</a></h3>
-                <h3>
-                  <a href="#" class="filter-btn" data-filter="all"
-                    >All Projects</a
-                  >
-                </h3>
-              </div>
-              <div class="nav">
-                <h3><a href="/about">> About</a></h3>
-                <h3>
-                  <a target="_blank" href="https://github.com/olivia-em"
-                    >> Github</a
-                  >
-                </h3>
-                <h3>
-                  <a
-                    target="_blank"
-                    href="https://editor.p5js.org/oliviaemlee/collections/Dg-N4uNEb"
-                    >> p5.js</a
-                  >
-                </h3>
-                <h5 class="btw">
-                  * I built this site using HTML/CSS & Eleventy.js!
-                </h5>
-              </div>
-            </div>
+  <main class="page-container">
+    <div class="content-wrap">
+    
+  
+    
+<div class="wrapper home">
+  <div class="home-content" >
+      <div class="home-nav">
+    <div class="olivia"> 
+<img class="logo" src="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png">
+<a href="/"><h1>OLIVIA LEE</h1></a>
+</div>
+<br>
+<div class="nav proj">
+    <h3><a href="#" class="filter-btn" data-filter="webdev">Web Development</a></h3>
+    <h3><a href="#" class="filter-btn" data-filter="code">Creative Code</a></h3>
+    <h3><a href="#" class="filter-btn" data-filter="vidart">Video</a></h3>
+    <h3><a href="/posts/design" >Static Design</a></h3>
+    <h3><a href="#" class="filter-btn" data-filter="all">All Projects</a></h3>
+</div>
+<div class="nav"> 
+<h3><a href="/about">> About</a></h3>
+<h3><a target="_blank" href="https://github.com/olivia-em">> Github</a></h3>
+<h3><a target="_blank" href="https://editor.p5js.org/oliviaemlee/collections/Dg-N4uNEb">> p5.js</a></h3>
+<h5 class="btw">* I built this site using HTML/CSS & Eleventy.js!</h5>
+</div>
 
-            <div class="tag">
-              <h4>Frontend Developer & Multimedia Artist, Based in NYC</h4>
-            </div>
-            <div class="container">
-              <a
-                href="/posts/girltime/"
-                class="project-card"
-                data-tags="posts,code,vidart,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7812.JPG');
-                  "
-                >
-                  <h4 class="overlay-content">< Girl Time ></h4>
-                </div> </a
-              ><a
-                href="/posts/newvoices/"
-                class="project-card"
-                data-tags="posts,webdev,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="background-image: url('/assets/newvoices.png')"
-                >
-                  <h4 class="overlay-content">< New Voices ></h4>
-                </div> </a
-              ><a
-                href="/posts/inpersp/"
-                class="project-card"
-                data-tags="posts,webdev,code,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="background-image: url('/assets/LIP.png')"
-                >
-                  <h4 class="overlay-content">< Lessons in Perspective ></h4>
-                </div> </a
-              ><a
-                href="/posts/alteregos/"
-                class="project-card"
-                data-tags="posts,vidart,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-still9.png');
-                  "
-                >
-                  <h4 class="overlay-content">< Alter Egos ></h4>
-                </div> </a
-              ><a
-                href="/posts/qatsi/"
-                class="project-card"
-                data-tags="posts,vidart,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-qatsi.jpg');
-                  "
-                >
-                  <h4 class="overlay-content">< Qatsi (2025) ></h4>
-                </div> </a
-              ><a
-                href="/posts/bowl/"
-                class="project-card"
-                data-tags="posts,all,webdev"
-              >
-                <!-- Render Video Background -->
-                <div class="projects video-background">
-                  <video autoplay loop muted playsinline class="video-content">
-                    <source
-                      src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-bowl.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <h4 class="overlay-content">< Incantation Bowl ></h4>
-                </div> </a
-              ><a
-                href="/posts/mozia/"
-                class="project-card"
-                data-tags="posts,webdev,all"
-              >
-                <!-- Render Video Background -->
-                <div class="projects video-background">
-                  <video autoplay loop muted playsinline class="video-content">
-                    <source
-                      src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-kiln.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <h4 class="overlay-content">< Mozia 2023 ></h4>
-                </div> </a
-              ><a
-                href="/posts/parametrics/"
-                class="project-card"
-                data-tags="posts,code,all"
-              >
-                <!-- Render Video Background -->
-                <div class="projects video-background">
-                  <video autoplay loop muted playsinline class="video-content">
-                    <source
-                      src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-flower.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <h4 class="overlay-content">< Parametrics ></h4>
-                </div> </a
-              ><a
-                href="/posts/design/"
-                class="project-card"
-                data-tags="posts,static,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-radial.jpg');
-                  "
-                >
-                  <h4 class="overlay-content">< Static Art &amp; Design ></h4>
-                </div> </a
-              ><a
-                href="/posts/decode/"
-                class="project-card"
-                data-tags="posts,code,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3-min.jpg');
-                  "
-                >
-                  <h4 class="overlay-content">< Decode ></h4>
-                </div> </a
-              ><a
-                href="/posts/encode/"
-                class="project-card"
-                data-tags="posts,code,all"
-              >
-                <!-- Render Video Background -->
-                <div class="projects video-background">
-                  <video autoplay loop muted playsinline class="video-content">
-                    <source
-                      src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-circles2.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <h4 class="overlay-content">< Encode ></h4>
-                </div> </a
-              ><a
-                href="/posts/webdesign/"
-                class="project-card"
-                data-tags="posts,webdev,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/2decb767-8051-4237-974a-927409aa4233-justbones.png');
-                  "
-                >
-                  <h4 class="overlay-content">< Smaller WebDev Projects ></h4>
-                </div> </a
-              ><a
-                href="/posts/nudes/"
-                class="project-card"
-                data-tags="posts,vidart,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="background-image: url('/assets/nudes.jpeg')"
-                >
-                  <h4 class="overlay-content">< theNudes ></h4>
-                </div> </a
-              ><a
-                href="/posts/tinydesk/"
-                class="project-card"
-                data-tags="posts,code,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/2decb767-8051-4237-974a-927409aa4233-DSC8113.JPEG');
-                  "
-                >
-                  <h4 class="overlay-content">< TinyDesk VJ ></h4>
-                </div> </a
-              ><a
-                href="/posts/specfut/"
-                class="project-card"
-                data-tags="posts,vidart,all"
-              >
-                <!-- Render Image Thumbnail -->
-                <div
-                  class="projects"
-                  style="
-                    background-image: url('/assets/2decb767-8051-4237-974a-927409aa4233-areyoufree.png');
-                  "
-                >
-                  <h4 class="overlay-content">< Are you free tomorrow? ></h4>
-                </div> </a
-              ><!--<a href="/posts/girltime/" class="project-card" data-tags="posts,code,vidart,all">
+    </div>
+    
+  <div class="tag">
+ <h4>Frontend Developer & Multimedia Artist, Based in NYC</h4>
+    </div>  
+      <div class="container"><a href="/posts/girltime/" class="project-card" data-tags="posts,code,vidart,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7812.JPG')">
+        <h4 class="overlay-content">
+          < Girl Time >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/newvoices/" class="project-card" data-tags="posts,webdev,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/newvoices.png')">
+        <h4 class="overlay-content">
+          < New Voices >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/inpersp/" class="project-card" data-tags="posts,webdev,code,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/LIP.png')">
+        <h4 class="overlay-content">
+          < Lessons in Perspective >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/alteregos/" class="project-card" data-tags="posts,vidart,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-still9.png')">
+        <h4 class="overlay-content">
+          < Alter Egos >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/qatsi/" class="project-card" data-tags="posts,vidart,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-qatsi.jpg')">
+        <h4 class="overlay-content">
+          < Qatsi (2025) >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/bowl/" class="project-card" data-tags="posts,all,webdev">
+    
+      <!-- Render Video Background -->
+      <div class="projects video-background">
+        <video autoplay loop muted playsinline class="video-content">
+          <source src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-bowl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4 class="overlay-content">
+          < Incantation Bowl >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/mozia/" class="project-card" data-tags="posts,webdev,all">
+    
+      <!-- Render Video Background -->
+      <div class="projects video-background">
+        <video autoplay loop muted playsinline class="video-content">
+          <source src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-kiln.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4 class="overlay-content">
+          < Mozia 2023 >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/parametrics/" class="project-card" data-tags="posts,code,all">
+    
+      <!-- Render Video Background -->
+      <div class="projects video-background">
+        <video autoplay loop muted playsinline class="video-content">
+          <source src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-flower.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4 class="overlay-content">
+          < Parametrics >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/design/" class="project-card" data-tags="posts,static,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-radial.jpg')">
+        <h4 class="overlay-content">
+          < Static Art &amp; Design >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/decode/" class="project-card" data-tags="posts,code,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-decode3-min.jpg')">
+        <h4 class="overlay-content">
+          < Decode >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/encode/" class="project-card" data-tags="posts,code,all">
+    
+      <!-- Render Video Background -->
+      <div class="projects video-background">
+        <video autoplay loop muted playsinline class="video-content">
+          <source src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-circles2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4 class="overlay-content">
+          < Encode >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/webdesign/" class="project-card" data-tags="posts,webdev,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/2decb767-8051-4237-974a-927409aa4233-justbones.png')">
+        <h4 class="overlay-content">
+          < Smaller WebDev Projects >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/nudes/" class="project-card" data-tags="posts,vidart,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/nudes.jpeg')">
+        <h4 class="overlay-content">
+          < theNudes >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/tinydesk/" class="project-card" data-tags="posts,code,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/2decb767-8051-4237-974a-927409aa4233-DSC8113.JPEG')">
+        <h4 class="overlay-content">
+          < TinyDesk VJ >
+        </h4>
+      </div>
+    
+  </a><a href="/posts/specfut/" class="project-card" data-tags="posts,vidart,all">
+    
+      <!-- Render Image Thumbnail -->
+      <div class="projects" style="background-image: url('/assets/2decb767-8051-4237-974a-927409aa4233-areyoufree.png')">
+        <h4 class="overlay-content">
+          < Are you free tomorrow? >
+        </h4>
+      </div>
+    
+  </a><!--<a href="/posts/girltime/" class="project-card" data-tags="posts,code,vidart,all">
         <div class="projects video-background">
             <video autoplay loop muted playsinline class="video-content">
     <source src="/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7812.JPG" type="video/mp4">
@@ -549,8 +440,8 @@
             </h4>
         </div>
     </a>-->
-
-              <!--
+          
+<!--
                
         <a href="/posts/girltime/">
             <div style="background-image: url('/assets/95731519-6287-4bbd-a281-712ac2b13fef-IMG_7812.JPG')" class="projects">
@@ -686,25 +577,27 @@
             </div>
         </a> 
     -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+  
+  </div>
+</div>
+  </div>
+    </div>
+    
+  </main>
     <script>
       // Add class to body for New Voices page targeting
-      if (window.location.pathname.includes("newvoices")) {
-        document.body.classList.add("newvoices-page");
+      if (window.location.pathname.includes('newvoices')) {
+        document.body.classList.add('newvoices-page');
       }
-
+      
       window.addEventListener("load", function () {
-        var loader = document.getElementById("preloader");
-        loader.classList.add("fade-out");
+            var loader = document.getElementById("preloader");
+            loader.classList.add("fade-out");
 
-        setTimeout(() => {
-          loader.style.display = "none";
-        }, 500); // Matches CSS transition duration
-      });
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500); // Matches CSS transition duration
+        });
     </script>
   </body>
 </html>

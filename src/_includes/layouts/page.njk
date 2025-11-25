@@ -1,3 +1,4 @@
+{% set base = '/old_portfolio/' if (process.env.ELEVENTY_ENV == 'production') else '/' %}
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
@@ -11,7 +12,7 @@ templateClass: tmpl-home
   </div>
    <div class="controls">
     
-  <a style="width: 30vw;display:flex;justify-content: center;" class="next" href="{{ '/' | url }}"><img class="logobig" src="{{ "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}"></a>
+  <a style="width: 30vw;display:flex;justify-content: center;" class="next" href="{{ base }}"><img class="logobig" src="{{ base + "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" }}"></a>
      
     </div>
 </div>

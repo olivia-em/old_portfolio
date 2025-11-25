@@ -1,3 +1,4 @@
+{% set base = '/old_portfolio/' if (process.env.ELEVENTY_ENV == 'production') else '/' %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,10 +6,10 @@
     {# This is the base template for the site–other templates extend this one #}
     
     <meta charset="utf-8" />
-    <link rel="icon" href="{{ "/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}" />
+  <link rel="icon" href="{{ base + "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="olivia-lee-portfolio" />
-  <link rel="stylesheet" type="text/css" href="{{ 'public/style.css' | url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ base + 'public/style.css' }}" />
     {% seo "" %}
   </head>
   <body>
@@ -78,9 +79,9 @@
 // });
 </script>
 <div id="preloader">
-  <img class="logobig a" src="{{ "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}">
-  <img class="logobig b" src="{{ "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}">
-  <img class="logobig c" src="{{ "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" | url }}">
+  <img class="logobig a" src="{{ base + "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" }}">
+  <img class="logobig b" src="{{ base + "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" }}">
+  <img class="logobig c" src="{{ base + "assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png" }}">
 
     </div>
   <main class="page-container">

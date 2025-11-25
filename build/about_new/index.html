@@ -1,247 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link
-      rel="icon"
-      href="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="olivia-lee-portfolio" />
-    <link rel="stylesheet" type="text/css" href="public/style.css" />
-    <title>Hey, I&apos;m Olivia! - Olivia&apos;s Portfolio</title>
 
-    <meta
-      name="description"
-      content="A portfolio with Olivia's recent projects."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta name="author" content="undefined" />
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
 
-    <link
-      rel="canonical"
-      href="https://olivia-em.github.io/portfolio/about_new/"
-    />
 
-    <meta property="og:title" content="Hey, I'm Olivia! - Olivia's Portfolio" />
-    <meta property="og:type" content="article" />
 
-    <meta
-      property="og:url"
-      content="https://olivia-em.github.io/portfolio/about_new/"
-    />
-    <meta
-      property="og:description"
-      content="A portfolio with Olivia's recent projects."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Lee-Olivia-RecordingFinal.png?v=1701375727440"
-    />
-
-    <meta name="twitter:card" content="summary" />
-
-    <meta
-      name="twitter:url"
-      content="https://olivia-em.github.io/portfolio/about_new/"
-    />
-    <meta
-      name="twitter:title"
-      content="Hey, I'm Olivia! - Olivia's Portfolio"
-    />
-    <meta
-      name="twitter:description"
-      content="A portfolio with Olivia's recent projects."
-    />
-    <meta
-      name="twitter:image"
-      content="https://cdn.glitch.me/2decb767-8051-4237-974a-927409aa4233/Lee-Olivia-RecordingFinal.png?v=1701375727440"
-    />
-  </head>
-  <body>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".filter-btn");
-        const cards = document.querySelectorAll(".project-card");
-
-        function adjustCardLayout() {
-          // Get only visible cards
-          const visibleCards = Array.from(cards).filter(
-            (card) => card.style.display !== "none"
-          );
-
-          if (visibleCards.length === 1) {
-            visibleCards[0].style.width = "50vw";
-          } else if (visibleCards.length % 2 === 1) {
-            visibleCards[visibleCards.length - 1].style.width = "60vw";
-          }
-        }
-
-        buttons.forEach((button) => {
-          button.addEventListener("click", function (e) {
-            e.preventDefault();
-            buttons.forEach((btn) => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            const filterTag = this.getAttribute("data-filter");
-
-            cards.forEach((card) => {
-              const tags = card.getAttribute("data-tags").split(",");
-              if (filterTag === "all" || tags.includes(filterTag)) {
-                card.style.display = "block";
-              } else {
-                card.style.display = "none";
-              }
-            });
-
-            //  setTimeout(adjustCardLayout, 10); // Delay ensures correct rendering
-          });
-        });
-
-        // Run layout fix on page load
-        //  adjustCardLayout();
-      });
-
-      // document.addEventListener("DOMContentLoaded", function () {
-      //     const buttons = document.querySelectorAll(".filter-btn");
-      //     const cards = document.querySelectorAll(".project-card");
-
-      //     buttons.forEach(button => {
-      //         button.addEventListener("click", function (e) {
-      //             e.preventDefault();
-      //             buttons.forEach(btn => btn.classList.remove("active"));
-      //             this.classList.add("active");
-
-      //             const filterTag = this.getAttribute("data-filter");
-
-      //             cards.forEach(card => {
-      //                 const tags = card.getAttribute("data-tags").split(","); // Split by space
-      //                 if (filterTag === "all" || tags.includes(filterTag)) {
-      //                     card.style.display = "block";
-      //                 } else {
-      //                     card.style.display = "none";
-      //                 }
-      //             });
-      //         });
-      //     });
-      // });
-    </script>
-    <div id="preloader">
-      <img
-        class="logobig a"
-        src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-      />
-      <img
-        class="logobig b"
-        src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-      />
-      <img
-        class="logobig c"
-        src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-      />
+<div class="wrapper home">
+  <div class="home-content">
+    
+    
+    <div class="home-nav">
+      <div class="olivia"> 
+  <img class="logo" src="/assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png">
+        <a href="/"><h1>OLIVIA LEE</h1></a>
+      </div>
+      
+      <div class="nav">
+        <h3><a href="/">> Back to Projects</a></h3>
+        <h3><a target="_blank" href="https://github.com/olivia-em">> Github</a></h3>
+      </div>
+      
+      
+      <div class="nav project-links">
+        <h3><a target="_blank" href="https://www.instagram.com/oli.via.online/">> Instagram</a></h3>
+        <h3><a target="_blank" href="mailto:olee0114@gmail.com">> Email</a></h3>
+        <h3><a target="_blank" href="https://www.linkedin.com/in/oliviaemlee0114">> LinkedIn</a></h3>
+        <h3><a target="_blank" href="/assets/Lee.Olivia_Resume.pdf">> Resume</a></h3>
+      </div>
+      
     </div>
-    <main class="page-container">
-      <div class="content-wrap">
-        <div class="wrapper home">
-          <div class="home-content">
-            <div class="home-nav">
-              <div class="olivia">
-                <img
-                  class="logo"
-                  src="assets/2decb767-8051-4237-974a-927409aa4233-stars1040invert.png"
-                />
-                <a href="/"><h1>OLIVIA LEE</h1></a>
-              </div>
 
-              <div class="nav">
-                <h3><a href="/">> Back to Projects</a></h3>
-                <h3>
-                  <a target="_blank" href="https://github.com/olivia-em"
-                    >> Github</a
-                  >
-                </h3>
-              </div>
+    
+    <div class="about-main-content">
+      
+      
+      <div class="about-content-wrapper">
+        
+        <div class="about-text-section">
+          <h1 class="about-title">Hey, I&#39;m Olivia!</h1>
+          <div class="about-text">
+            <p>I'm a front-end developer and multimedia artist interested in poetics, audio/visual technology, and creating interactive web art with HTML, CSS, and JavaScript. I have a background in English literature, archaeology, and translation, which both informs my creative practice and has strengthened my concept development skills.</p>
+<p>My skillset also extends to audio-visual tools like Resolume Arena and Ableton, and fabrication methods including CAD, 3D printing (SLA and FDM), and laser cutting.</p>
+<p>At NYU's Interactive Telecommunications Program, I've been building my front-end development skills, writing experimental web poetry, and exploring audio-reactive visuals. Beyond my more technical work, I'm passionate about vibe curation—creating playlists, Pinterest boards, collages, and poetry that capture specific emotional experiences.</p>
 
-              <div class="nav project-links">
-                <h3>
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/oli.via.online/"
-                    >> Instagram</a
-                  >
-                </h3>
-                <h3>
-                  <a target="_blank" href="mailto:olee0114@gmail.com"
-                    >> Email</a
-                  >
-                </h3>
-                <h3>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/oliviaemlee0114"
-                    >> LinkedIn</a
-                  >
-                </h3>
-                <h3>
-                  <a target="_blank" href="/assets/Lee.Olivia_Resume.pdf"
-                    >> Resume</a
-                  >
-                </h3>
-              </div>
-            </div>
-
-            <div class="about-main-content">
-              <div class="about-content-wrapper">
-                <div class="about-text-section">
-                  <h1 class="about-title">Hey, I&#39;m Olivia!</h1>
-                  <div class="about-text">
-                    <p>
-                      I'm a front-end developer and multimedia artist interested
-                      in poetics, audio/visual technology, and creating
-                      interactive web art with HTML, CSS, and JavaScript. I have
-                      a background in English literature, archaeology, and
-                      translation, which both informs my creative practice and
-                      has strengthened my concept development skills.
-                    </p>
-                    <p>
-                      My skillset also extends to audio-visual tools like
-                      Resolume Arena and Ableton, and fabrication methods
-                      including CAD, 3D printing (SLA and FDM), and laser
-                      cutting.
-                    </p>
-                    <p>
-                      At NYU's Interactive Telecommunications Program, I've been
-                      building my front-end development skills, writing
-                      experimental web poetry, and exploring audio-reactive
-                      visuals. Beyond my more technical work, I'm passionate
-                      about vibe curation—creating playlists, Pinterest boards,
-                      collages, and poetry that capture specific emotional
-                      experiences.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="about-media-container"></div>
-            </div>
           </div>
         </div>
+        
       </div>
-    </main>
-    <script>
-      // Add class to body for New Voices page targeting
-      if (window.location.pathname.includes("newvoices")) {
-        document.body.classList.add("newvoices-page");
-      }
-
-      window.addEventListener("load", function () {
-        var loader = document.getElementById("preloader");
-        loader.classList.add("fade-out");
-
-        setTimeout(() => {
-          loader.style.display = "none";
-        }, 500); // Matches CSS transition duration
-      });
-    </script>
-  </body>
-</html>
+      
+      
+      <div class="about-media-container"></div>
+      
+    </div>
+  </div>
+</div>
